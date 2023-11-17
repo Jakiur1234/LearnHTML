@@ -32,19 +32,21 @@
                 <h5>HTML Image:</h5>
                 <ul>
                     <li>HTML এ <span class="highlight">&lt;img&gt; </span> ট্যাগ ব্যবহার করা হয় ওয়েব পেজ এ ছবি যুক্ত
-                        করার জন্য।ছবি সাধারণত ওয়েব পেজ এ লিংক করা করা হয় এই <span
-                            class="highlight">&lt;img&gt;</span>ট্যাগ এর মাধ্যমে |</li>
-                    <li>এই <span class="highlight">&lt;img&gt;</span>হচ্ছে empty ট্যাগ, এই ট্যাগ এ শুধু attributes থাকে
+                        করার জন্য।ছবি সাধারণত ওয়েব পেজ এ লিংক করা করা হয় <span class="highlight">&lt;img&gt;</span>
+                        ট্যাগ এর মাধ্যমে |</li>
+                    <li><span class="highlight">&lt;img&gt;</span> হচ্ছে একটি empty ট্যাগ, এই ট্যাগ এ শুধু attributes
+                        থাকে
                         এবং এই ট্যাগ এর কোনো closing ট্যাগ নেই। </li>
-                    <li>এই <span class="highlight">&lt;img&gt;</span> ট্যাগ এর দুইটি প্রয়োজনীয় attributes রয়েছে।</li>
+                    <li><span class="highlight">&lt;img&gt;</span> ট্যাগ টির জন্য দুইটি প্রয়োজনীয় attributes রয়েছে।</li>
+                    <li>ইমেজটি যে (URL) এর মধ্যে অবস্থিত তার লোকেশন <span class="highlight">src</span> Attribute এ
+                        নির্ধারণ করতে হবে।</li>
                     <ol>
-                        <li><b><big>src</big></b> - এই attribute ইমেজ এর লোকেশন নির্ধারণ কর।</li>
-                        <li><b><big>alt</big></b> - এই attribute ইমেজ এর জন্য বিকল্প টেক্সট নির্ধারণ কর।</li>
+                        <li><b>src</b> - এই attribute ইমেজ এর লোকেশন নির্ধারণ কর।</li>
+                        <li><b>alt</b> - এই attribute ইমেজ এর জন্য বিকল্প টেক্সট নির্ধারণ কর।</li>
                     </ol>
-
                 </ul>
                 <h5>
-                    A Simple HTML Document
+                    Image tag example:
                 </h5>
 
                 <div class="example">
@@ -55,7 +57,7 @@
 &lt;/head&gt;
 &lt;body&gt;
 
-&lt;img src="url" alt="alternatetext"&gt;
+&lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;</div></pre>
@@ -64,33 +66,13 @@
                     </button>
                 </div>
                 <br>
-                <h5>Example এর বর্ণনা</h5>
-                <ul>
-                    <li><span class="highlight">&lt;!DOCTYPE html&gt;</span> নির্দেশ করে এটা একটা html5 ডকুমেন্টস ।
-                    </li>
-                    <li><span class="highlight">&lt;html&gt;</span> element হচ্ছে html পেইজ এর মূল element । এর ভিতরেই
-                        html এর বাকি সকল element থাকে ।</li>
-                    <li><span class="highlight">&lt;head&gt;</span>element একটা পেইজ এর এবং ওয়েবসাইট এর meta সম্পর্কিত
-                        সকল তথ্য ধারণ করে রাখে ।</li>
-                    <li><span class="highlight">&lt;title&gt;</span> মূলত <span class="highlight">&lt;head&gt;</span> এর
-                        ভিতরে অবস্থান করে এবং এই elements এর ভিতরে থাকা তথ্য ওয়েব ব্রাউজার এর tab এর টাইটেল হিসেবে
-                        দেখানো হয় ।</li>
-                    <li><span class="highlight">&lt;body&gt;</span> element ডকুমেন্টের মূল body নির্দেশ করে । এটা মূলত
-                        একটা container হিসেবে কাজ করে
-                        যেটা ওয়েব পেজের সকল দৃশ্যমান অংশ ধারণ করে । উদাহরণ হিসেবে বলা যায় headings,paragraph,img,
-                        link,hyperlink ইত্যাদি ।</li>
-                    ইমেজটি যে এর (URL) এর মধ্যে অবস্থিত তার লোকেশন এই Attribute এ নির্ধারণ করতে হবে।<br> 
-                    <b>Note:</b>যখন একটি ওয়েব পেজ এ ইমেজ  লোড হয় তখন এটি সার্ভার থেকে আসে, কিন্তু যদি সেই সার্ভার এ ইমেজটি না থাকে তখন একটি broken link icon দেখা যায় । তখন সেই broken link icon এবং <span class="highlight">alt</span> টেক্সট দেখা যায় যদি ব্রাউজার ইমেজটি খুঁজে না পায়।
-                </div><br>
-                <h5>Example:</h5>
-                <div class="example">
-                    <pre class="example-code"><div class="code-highlights1"id="example2">&lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;
-</div></pre>
-                    <button class="btn btn-primary try-btn2">
-                        Try It Yourself <i class="fas fa-chevron-right"></i>
-                    </button>
-                    </div> 
-
+                <div class="alert alert-danger">
+                    <i class="fas fa-lightbulb"></i>
+                    <b>Note:</b>যখন একটি ওয়েব পেজ এ ইমেজ লোড হয় তখন এটি সার্ভার থেকে আসে, কিন্তু যদি সেই সার্ভার এ
+                    ইমেজটি না থাকে তখন একটি broken link icon এবং <span class="highlight">alt</span> attribute এ থাকা
+                    টেক্সট দেখায় । উপরের উদাহরণের ইমেজ টি সার্ভার এ নেই তাই এটি broken link icon এবং <span class="highlight">alt</span> attribute এ থাকা
+                    টেক্সট দেখাচ্ছে ।
+                </div>
 
                 <!---Footer Row-->
                 <div class="row align-items-center main-content">
@@ -118,7 +100,8 @@
 
             <script>
                 w3CodeColor(document.querySelector(".code-highlights"));
-                const example1 = document.getElementById("example1").value;
+
+                const example1 = document.getElementById("example1").innerText;
                 const example1btn = document.querySelector(".try-btn1");
 
                 example1btn.onclick = () => {
@@ -126,14 +109,6 @@
                     window.location.href = "../editor.html";
                 }
 
-                w3CodeColor(document.querySelector(".code-highlights1"));
-                const example2 = document.getElementById("example2").value;
-                const example2btn = document.querySelector(".try-btn2");
-
-                example2btn.onclick = () => {
-                    localStorage.setItem("example", example2);
-                    window.location.href = "../editor.html";
-                }
                 localStorage.setItem("whereYouRead", "11");
 
                 //send user on home page
