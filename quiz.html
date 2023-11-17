@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <script src="scrollAnimation/scrollanime.js"></script>
+  <title>কুইজ</title>
+</head>
+
+<body class="noselect">
+  <div class="container-fluid">
+    <div class="row header align-items-center">
+      <div class="col-2 header-left">
+        <i class="fas fa-bars" onclick="openNav()"></i>
+      </div>
+      <div class="col-8 header-title ">
+
+      </div>
+      <div class="col-2 header-right">
+        <i class="fas fa-share"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay">
+
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <div style="padding: 15px;">
+      <h1 style="font-size: 20px;">
+        Learn HTML
+      </h1>
+      <small>
+        version : 1.0.0
+      </small>
+    </div>
+    <a href="index.html"><i class="fas fa-home"></i> হোম</a>
+    <a href="editor.html"><i class="fas fa-code"></i> কোড ইডিটর</a>
+    <a href="learning_step.html"><i class="fa-solid fa-stairs"></i> শেখার ধাপসমূহ</a>
+    <a href="quiz.html" class="active"><i class="fas fa-graduation-cap"></i> কুইজ</a>
+    <a href="settings.html"><i class="fa-solid fa-gear"></i> সেটিংস</a>
+    <a href="privacy.html"><i class="fas fa-book"></i> Privacy Policy</a>
+    <a href="terms.html"><i class="fa-solid fa-clipboard-list"></i> Terms and Condition</a>
+  </div>
+
+  <div class="container-fluid list-con" style="margin-top : 70px !important;">
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="progress" style="background-color: #76B2F8;height:50px;">
+          <div class="progress-bar" role="progressbar" style="width: 0%;background-color: #0076FF;font-size: 20px;"
+            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <span class="show-progress-value">
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="alert alert-danger" role="alert"style="text-align : justify;">
+          আপনি যদি সকল কুইজ শেষ করে এবং learning progress 100% করেও সার্টিফিকেট না পান তাহলে
+          <a href="mailto:zeropreface@gmail.com">contact us.</a>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-12">
+        <div class="form-group">
+          <input type="text" onkeyup="myFunction()" id="input" class="form-control" placeholder="Search From Here" />
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="list-group" id="myUL">
+          <div class="card" onclick="window.location.href='quiz/intro.html'" id="intro-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="intro-quiz-link">
+                      HTML Introduction
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="intro-quiz-num">
+                      Quiz 1
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="intro-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='quiz/editor.html'" id="editor-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="editor-quiz-link">
+                      HTML Editor
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="editor-quiz-num">
+                      Quiz 2
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="editor-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='quiz/element.html'" id="element-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="element-quiz-link">
+                      HTML Element
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="element-quiz-num">
+                      Quiz 3
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="element-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='quiz/attribute.html'" id="attribute-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="attribute-quiz-link">
+                      HTML Attribute
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="attribute-quiz-num">
+                      Quiz 4
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="attribute-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='quiz/heading.html'" id="heading-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="heading-quiz-link">
+                      HTML Heading
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="heading-quiz-num">
+                      Quiz 5
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="heading-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='quiz/paragraph.html'" id="paragraph-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="paragraph-quiz-link">
+                      HTML Paragraph
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="paragraph-quiz-num">
+                      Quiz 6
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="paragraph-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='quiz/quotation.html'" id="quotation-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="quotation-quiz-link">
+                      HTML Quotation
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="quotation-quiz-num">
+                      Quiz 7
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="quotation-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='quiz/comment.html'" id="comment-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="comment-quiz-link">
+                      HTML Comment
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="comment-quiz-num">
+                      Quiz 8
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="comment-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='quiz/color.html'" id="color-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="color-quiz-link">
+                      HTML Color
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="color-quiz-num">
+                      Quiz 9
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="color-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='quiz/css.html'" id="css-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="css-quiz-link">
+                      HTML CSS
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="css-quiz-num">
+                      Quiz 10
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="css-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" onclick="window.location.href='quiz/image.html'" id="image-con">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-9 learn-card-text">
+                  <div class="row align-items-center">
+                    <div class="col quiz-link" id="image-quiz-link">
+                      HTML Image
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col quiz-num" id="image-quiz-num">
+                      Quiz 11
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 quiz-status" id="image-take">
+                  Not Taken
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            <div class="card" onclick="window.location.href='quiz/link.html'" id="link-con">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-9 learn-card-text">
+                    <div class="row align-items-center">
+                      <div class="col quiz-link" id="link-quiz-link">
+                        HTML Link
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col quiz-num" id="link-quiz-num">
+                        Quiz 12
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 quiz-status" id="link-take">
+                    Not Taken
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" onclick="window.location.href='quiz/table.html'" id="table-con">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-9 learn-card-text">
+                    <div class="row align-items-center">
+                      <div class="col quiz-link" id="table-quiz-link">
+                        HTML Table
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col quiz-num" id="table-quiz-num">
+                        Quiz 13
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 quiz-status" id="table-take">
+                    Not Taken
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.location.href='quiz/list.html'" id="list-con">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-9 learn-card-text">
+                    <div class="row align-items-center">
+                      <div class="col quiz-link" id="list-quiz-link">
+                        HTML List
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col quiz-num" id="list-quiz-num">
+                        Quiz 14
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 quiz-status" id="list-take">
+                    Not Taken
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" onclick="window.location.href='quiz/class.html'" id="class-con">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-9 learn-card-text">
+                    <div class="row align-items-center">
+                      <div class="col quiz-link" id="class-quiz-link">
+                        HTML Class
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col quiz-num" id="class-quiz-num">
+                        Quiz 15
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 quiz-status" id="class-take">
+                    Not Taken
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" onclick="window.location.href='quiz/id.html'" id="id-con">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-9 learn-card-text">
+                    <div class="row align-items-center">
+                      <div class="col quiz-link" id="id-quiz-link">
+                        HTML Id
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col quiz-num" id="id-quiz-num">
+                        Quiz 16
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 quiz-status" id="id-take">
+                    Not Taken
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" onclick="window.location.href='quiz/iframe.html'" id="iframe-con">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-9 learn-card-text">
+                    <div class="row align-items-center">
+                      <div class="col quiz-link" id="iframe-quiz-link">
+                        HTML Iframe
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col quiz-num" id="iframe-quiz-num">
+                        Quiz 17
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 quiz-status" id="iframe-take">
+                    Not Taken
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" onclick="window.location.href='quiz/javascript.html'" id="javascript-con">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-9 learn-card-text">
+                    <div class="row align-items-center">
+                      <div class="col quiz-link" id="javascript-quiz-link">
+                        HTML Javascript
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col quiz-num" id="javascript-quiz-num">
+                        Quiz 18
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 quiz-status" id="javascript-take">
+                    Not Taken
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" onclick="window.location.href='quiz/symbol.html'" id="symbol-con">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-9 learn-card-text">
+                    <div class="row align-items-center">
+                      <div class="col quiz-link" id="symbol-quiz-link">
+                        HTML Symbols
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col quiz-num" id="symbol-quiz-num">
+                        Quiz 19
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 quiz-status" id="symbol-take">
+                    Not Taken
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" onclick="window.location.href='quiz/form.html'" id="form-con">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-9 learn-card-text">
+                    <div class="row align-items-center">
+                      <div class="col quiz-link" id="form-quiz-link">
+                        HTML Form
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col quiz-num" id="form-quiz-num">
+                        Quiz 20
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 quiz-status" id="form-take">
+                    Not Taken
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="card" onclick="window.location.href='quiz/form_input_types.html'" id="form_input_types-con">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-9 learn-card-text">
+                      <div class="row align-items-center">
+                        <div class="col quiz-link" id="form_input_types-quiz-link">
+                          HTML Form Input Types
+                        </div>
+                      </div>
+                      <div class="row align-items-center">
+                        <div class="col quiz-num" id="form_input_types-quiz-num">
+                          Quiz 21
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 quiz-status" id="form_input_types-take">
+                      Not Taken
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card" onclick="window.location.href='quiz/video.html'" id="video-con">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-9 learn-card-text">
+                      <div class="row align-items-center">
+                        <div class="col quiz-link" id="video-quiz-link">
+                          HTML Video
+                        </div>
+                      </div>
+                      <div class="row align-items-center">
+                        <div class="col quiz-num" id="video-quiz-num">
+                          Quiz 22
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 quiz-status" id="video-take">
+                      Not Taken
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card" onclick="window.location.href='quiz/audio.html'" id="audio-con">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-9 learn-card-text">
+                      <div class="row align-items-center">
+                        <div class="col quiz-link" id="audio-quiz-link">
+                          HTML Audio
+                        </div>
+                      </div>
+                      <div class="row align-items-center">
+                        <div class="col quiz-num" id="audio-quiz-num">
+                          Quiz 23
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 quiz-status" id="audio-take">
+                      Not Taken
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card" onclick="window.location.href='quiz/youtube.html'" id="youtube-con">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-9 learn-card-text">
+                      <div class="row align-items-center">
+                        <div class="col quiz-link" id="youtube-quiz-link">
+                          HTML Youtube
+                        </div>
+                      </div>
+                      <div class="row align-items-center">
+                        <div class="col quiz-num" id="youtube-quiz-num">
+                          Quiz 24
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 quiz-status" id="youtube-take">
+                      Not Taken
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card" onclick="window.location.href='quiz/favicon.html'" id="favicon-con">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-9 learn-card-text">
+                      <div class="row align-items-center">
+                        <div class="col quiz-link" id="favicon-quiz-link">
+                          HTML Favicon
+                        </div>
+                      </div>
+                      <div class="row align-items-center">
+                        <div class="col quiz-num" id="favicon-quiz-num">
+                          Quiz 25
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 quiz-status" id="favicon-take">
+                      Not Taken
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <script src="jquery&popper/jqueryslim.js"></script>
+        <script src="jquery&popper/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/progress.js"></script>
+        <script>
+          var overlay = document.querySelector(".overlay");
+          var crossbtn = document.querySelector(".crossbar");
+          var right = document.querySelector(".header-right");
+
+          right.onclick = function () {
+            window.plugins.socialsharing.share(
+              'I am demo user of Learn HTML App.This app coming soon on playstore.',
+              'Learn HTML App',
+              'https://apps.zeropreface.com/images/banner.jpg',
+              'https://zeropreface.com'
+            )
+          }
+
+          overlay.onclick = function () {
+            document.getElementById("mySidenav").style.width = "0";
+            overlay.style.display = "none";
+            crossbtn.style.display = "none";
+          }
+
+          crossbtn.onclick = () => {
+            document.getElementById("mySidenav").style.width = "0";
+            overlay.style.display = "none";
+            crossbtn.style.display = "none";
+          }
+          function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("input");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByClassName("card");
+            for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByClassName("quiz-link")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+              } else {
+                li[i].style.display = "none";
+              }
+            }
+          }
+        </script>
+</body>
+
+</html>

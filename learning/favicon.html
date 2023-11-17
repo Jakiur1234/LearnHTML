@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="css/samestyle.css">
+        <title>HTML Favicon</title>
+    </head>
+    <body class="noselect">
+        <div class="container-fluid">
+            <div class="row header align-items-center">
+              <div class="col-2 header-left">
+                <i class="fas fa-arrow-left"onclick="back()"></i>
+              </div>
+              <div class="col-8 header-title ">
+      
+              </div>
+              <div class="col-2 header-right">
+                <i class="fas fa-home"onclick="home()"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main">
+            <div class="row align-items-center main-content">
+                <div class="col">
+                <h5>HTML কি?</h5> 
+                <ul>
+                    <li>HTML এর পূর্নরূপ হলো Hyper Text Makrup Language ।</li>
+                    <li>Web page তৈরির জন্য HTML একটা আদর্শ markup language ।</li>
+                    <li>HTML একটা ওয়েবসাইট এর কাঠামো তৈরি করতে ব্যাবহার করা হয় ।</li>
+                    <li>HTML অনেকগুলো elements এর সমন্বয়ে গঠিত হয় ।</li>
+                    <li>HTML elements গুলাই নির্ধারণ করে ব্রাউজার সকল কন্টেন্ট কিভাবে প্রদর্শিত হবে ।</li>
+                </ul>
+	            <h5>
+                    A Simple HTML Document
+                </h5> 
+
+                <div class="example">
+                <textarea rows="13"id="example1"class="form-control">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>  
+                </textarea>
+                <br>
+                <button class="btn btn-primary try-btn1">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+            <h5>Example এর বর্ণনা</h5> 
+<ul>
+	<li><span class="highlight">&lt;!DOCTYPE html&gt;</span> নির্দেশ করে এটা একটা html5 ডকুমেন্টস । </li>
+	<li><span class="highlight">&lt;html&gt;</span> element হচ্ছে html পেইজ এর মূল element । এর ভিতরেই html এর বাকি সকল element থাকে ।</li>
+	<li><span class="highlight">&lt;head&gt;</span>element একটা পেইজ এর এবং ওয়েবসাইট এর meta সম্পর্কিত সকল তথ্য ধারণ করে রাখে ।</li>
+	<li><span class="highlight">&lt;title&gt;</span> মূলত <span class="highlight">&lt;head&gt;</span> এর ভিতরে অবস্থান করে এবং এই elements এর ভিতরে থাকা তথ্য ওয়েব ব্রাউজার এর tab এর টাইটেল হিসেবে দেখানো হয় ।</li>
+	<li><span class="highlight">&lt;body&gt;</span> element ডকুমেন্টের মূল body নির্দেশ করে । এটা মূলত একটা container হিসেবে কাজ করে 
+     যেটা ওয়েব পেজের সকল দৃশ্যমান অংশ ধারণ করে । উদাহরণ হিসেবে বলা যায় headings,paragraph,img, link,hyperlink ইত্যাদি ।</li>
+	<li><span class="highlight">&lt;h1&gt;</span> সবচেয়ে বড় heading ট্যাগ । </li>
+	<li><span class="highlight">&lt;p&gt;</span> মূলত প্যারাগ্রাফ ট্যাগ কে নির্দেশ করে ।</li>
+</ul>
+<br>
+
+        <!---Footer Row-->
+        <div class="row align-items-center main-content">
+            <div class="col-3 prev"onclick="prev()">
+                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
+            </div>
+            <div class="col-6 exam">
+                <button onclick="quiz()"class="btn btn-primary">
+                    কুইজ দিন
+                </button>
+            </div>
+            <div class="col-3 next">
+                
+            </div>
+        </div>
+    </div>
+
+
+        <script src="../jquery&popper/jqueryslim.js"></script>
+        <script src="../jquery&popper/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../cordova.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            const example1 = document.getElementById("example1").value;
+            const example1btn = document.querySelector(".try-btn1");
+
+            example1btn.onclick = ()=>{
+                localStorage.setItem("example",example1);
+                window.location.href = "../editor.html";
+            }
+            localStorage.setItem("whereYouRead","24");
+
+            //send user on home page
+            function home(){
+                window.location.href = "../index.html";
+            }
+            function prev(){
+                window.location.href = "youtube.html";
+            }
+            function back(){
+                window.history.back();
+            }
+
+            //send user on quiz
+            function quiz(){
+                window.location.href = "../quiz/favicon.html";
+            }
+        </script>
+    </body>
+</html>

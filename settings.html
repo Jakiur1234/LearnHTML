@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width'>
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="fontawesome/css/all.css">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/setting.css">
+      <title>সেটিংস</title>
+    </head>
+    <body class="noselect">
+      <div class="container-fluid">
+        <div class="row header align-items-center">
+          <div class="col-2 header-left">
+            <i class="fas fa-bars"onclick="openNav()"></i>
+          </div>
+          <div class="col-8 header-title ">
+  
+          </div>
+          <div class="col-2 header-right">
+            <i class="fas fa-share"></i>
+          </div>
+        </div>
+      </div>
+  
+      <div class="overlay">
+  
+      </div>
+  
+      <div id="mySidenav" class="sidenav">
+        <div style="padding: 15px;">
+          <h1 style="font-size: 20px;">
+            Learn HTML
+          </h1>
+          <small>
+            version : 1.0.0
+          </small>
+        </div>
+        <a href="index.html"><i class="fas fa-home"></i> হোম</a>      
+        <a href="editor.html"><i class="fas fa-code"></i> কোড ইডিটর</a>
+        <a href="learning_step.html"><i class="fa-solid fa-stairs"></i> শেখার ধাপসমূহ</a>
+        <a href="quiz.html"><i class="fas fa-graduation-cap"></i> কুইজ</a>
+        <a href="settings.html"class="active"><i class="fa-solid fa-gear"></i> সেটিংস</a>
+        <a href="privacy.html"><i class="fas fa-book"></i> Privacy Policy</a>
+        <a href="terms.html"><i class="fa-solid fa-clipboard-list"></i> Terms and Condition</a>
+      </div>
+
+      <div class="container-fluid main-con">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <small>
+              Report
+            </small>
+            <p style="text-align : left;">
+                সকল কুইজের ফলাফলের রিপোর্ট 
+            </p>
+          </div>
+          <div class="col-4"style="text-align : right;">
+            <button class="btn btn-primary"data-toggle="modal" data-target="#report">
+              view
+            </button>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <small>
+              Font Size
+            </small>
+            <p style="text-align : left;">
+               লেসনের লেখার সাইজ পরিবর্তন করুন 
+            </p>
+          </div>
+          <div class="col-4"style="text-align : right;"data-toggle="modal" data-target="#lesson_font">
+            <button class="btn btn-primary">
+              Adjust
+            </button>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <small>
+              Animation
+            </small>
+            <p style="text-align : left;">
+               এনিমেশন ব্যাবহার করুন
+            </p>
+          </div>
+          <div class="col-4"style="text-align : right;">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="anime">
+              <label class="custom-control-label" for="customSwitch1"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---
+      Report Goes Here
+      -->
+      <!-- Modal -->
+    <div class="modal fade" id="report" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Report</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Topics<br/> no</th>
+                  <th scope="col">Mark</th>
+                  <th scope="col">Percentage</th>
+                  <th scope="col">Passed
+                    <br>(80%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td id="intro"></td>
+                  <td id="intro-per"></td>
+                  <td id="intro-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td id="editor"></td>
+                  <td id="editor-per"></td>
+                  <td id="editor-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td id="element"></td>
+                  <td id="element-per"></td>
+                  <td id="element-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td id="attribute"></td>
+                  <td id="attribute-per"></td>
+                  <td id="attribute-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td id="heading"></td>
+                  <td id="heading-per"></td>
+                  <td id="heading-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td id="paragraph"></td>
+                  <td id="paragraph-per"></td>
+                  <td id="paragraph-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td id="quotation"></td>
+                  <td id="quotation-per"></td>
+                  <td id="quotation-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td id="comment"></td>
+                  <td id="comment-per"></td>
+                  <td id="comment-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td id="color"></td>
+                  <td id="color-per"></td>
+                  <td id="color-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td id="css"></td>
+                  <td id="css-per"></td>
+                  <td id="css-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td id="image"></td>
+                  <td id="image-per"></td>
+                  <td id="image-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td id="link"></td>
+                  <td id="link-per"></td>
+                  <td id="link-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">13</th>
+                  <td id="table"></td>
+                  <td id="table-per"></td>
+                  <td id="table-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">14</th>
+                  <td id="list"></td>
+                  <td id="list-per"></td>
+                  <td id="list-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">15</th>
+                  <td id="class"></td>
+                  <td id="class-per"></td>
+                  <td id="class-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">16</th>
+                  <td id="id"></td>
+                  <td id="id-per"></td>
+                  <td id="id-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">17</th>
+                  <td id="iframe"></td>
+                  <td id="iframe-per"></td>
+                  <td id="iframe-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">18</th>
+                  <td id="javascript"></td>
+                  <td id="javascript-per"></td>
+                  <td id="javascript-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">19</th>
+                  <td id="symbol"></td>
+                  <td id="symbol-per"></td>
+                  <td id="symbol-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">20</th>
+                  <td id="form"></td>
+                  <td id="form-per"></td>
+                  <td id="form-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">21</th>
+                  <td id="form_input_types"></td>
+                  <td id="form_input_types-per"></td>
+                  <td id="form_input_types-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">22</th>
+                  <td id="video"></td>
+                  <td id="video-per"></td>
+                  <td id="video-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">23</th>
+                  <td id="audio"></td>
+                  <td id="audio-per"></td>
+                  <td id="audio-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">24</th>
+                  <td id="youtube"></td>
+                  <td id="youtube-per"></td>
+                  <td id="youtube-res"></td>
+                </tr>
+                <tr>
+                  <th scope="row">25</th>
+                  <td id="favicon"></td>
+                  <td id="favicon-per"></td>
+                  <td id="favicon-res"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!---
+      Report Goes Here
+      -->
+      <!-- Modal -->
+    <div class="modal fade" id="lesson_font" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Report</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="formControlRange">Font Size</label>
+                <input type="range"id="range"class="form-control-range" id="formControlRange">
+                <small>
+                  Size : <span id="size-view">16</span>
+                </small>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary"style="float : right;"onclick="saveSize()">
+                  Save
+                </button>
+              </div>
+            </form>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <script src="jquery&popper/jqueryslim.js"></script>
+      <script src="jquery&popper/popper.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="cordova.js"></script>
+      <script src="sweetalert/sweetalert.js"></script>
+      <script src="js/header.js"></script>
+      <script src="js/setting.js"></script>
+      <script>
+        //get the font size value
+        var fs = document.getElementById("range");
+
+        var font_size_bef = localStorage.getItem("reading_font_size");
+
+        if(font_size_bef === null){
+          fs.value = 16;
+        }
+        else{
+          fs.value = font_size_bef;
+        }
+        
+        fs.onchange = ()=> {
+          document.getElementById("size-view").innerHTML = fs.value;
+        }
+
+
+
+        document.getElementById("size-view").innerHTML = fs.value;
+
+        function saveSize(){
+          localStorage.setItem("reading_font_size",fs.value);
+        }
+
+        var overlay = document.querySelector(".overlay");
+        var crossbtn = document.querySelector(".crossbar");
+        var right = document.querySelector(".header-right");
+
+        right.onclick = function(){
+        window.plugins.socialsharing.share(
+            'I am demo user of Learn HTML App.This app coming soon on playstore.', 
+            'Learn HTML App',
+            'https://apps.zeropreface.com/images/banner.jpg',
+            'https://zeropreface.com'
+            )
+        }
+    
+        overlay.onclick = function(){
+          document.getElementById("mySidenav").style.width = "0";
+          overlay.style.display = "none";
+          crossbtn.style.display = "none";
+        }
+
+        crossbtn.onclick = ()=>{
+          document.getElementById("mySidenav").style.width = "0";
+          overlay.style.display = "none";
+          crossbtn.style.display = "none";
+        }
+    </script>
+    </body>
+    </html>
+      

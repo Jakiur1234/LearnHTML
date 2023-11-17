@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/editor.css">
+        <link rel="stylesheet" href="css/header.css">
+        <title>কোড এডিটর</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row header align-items-center">
+                <div class="col-3 header-left">
+                    <i class="fa-solid fa-xmark"id="close"></i>
+                </div>
+                <div class="col-6">
+                    <div class="row code-output">
+                        <div class="col-6 code">
+                            Code
+                        </div>
+                        <div class="col-6 output-btn">
+                            Output
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 header-right"data-toggle="modal"data-target="#setting">
+                    <i class="fa-solid fa-ellipsis-vertical"id="info-btn"></i>
+                </div>
+            </div>
+        </div>
+
+        <textarea id="html" placeholder="" class="form-control"style="margin-top : 56px;"></textarea>
+        <textarea id="css" placeholder="" class="form-control"></textarea>
+        <textarea id="js" placeholder="" class="form-control"></textarea>
+
+
+        <div class="embed-responsive embed-responsive-4by3 output-con">
+            <iframe id="output"class="iframe embed-responsive-item"frameborder="0"></iframe>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="setting" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editor Setting</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="fontsize">
+                            Font Size :
+                        </label>
+                        <select id="fsize"class="form-control">
+                            <option value="">None</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="color">
+                            Font color :
+                        </label>
+                        <select id="fcolor"class="form-control">
+                            <option value="">None</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="white">white</option>
+                            <option value="wheat">wheat</option>
+                            <option value="whitesmoke">whitesmoke</option>
+                            <option value="gray">Gray</option>
+                            <option value="cyan">Cyan</option>
+                            <option value="magenta">Magenta</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="canvas-color">
+                            Canvas color :
+                        </label>
+                        <select id="ccolor"class="form-control">
+                            <option value="">None</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="white">white</option>
+                            <option value="wheat">wheat</option>
+                            <option value="whitesmoke">whitesmoke</option>
+                            <option value="gray">Gray</option>
+                            <option value="cyan">Cyan</option>
+                            <option value="magenta">Magenta</option>
+                        </select>
+                    </div>
+
+                    <small>
+                        <a href="#"class="reset_setting">Reset Deault Setting</a>
+                    </small>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary save">
+                        Save
+                    </button>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <script src="jquery&popper/jqueryslim.js"></script>
+        <script src="jquery&popper/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="cordova.js"></script>
+        <script src="js/editor.js"></script>
+    </body>
+</html>

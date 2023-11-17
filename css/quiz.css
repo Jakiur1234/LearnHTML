@@ -1,0 +1,45 @@
+body{
+    background-color: #EEEEEE;
+}
+.list-con{
+    margin-top: 50px;
+}
+.take-quiz{
+    background-color: #0076FF;
+    color: white;
+}
+.not-take{
+    background-color: #7FBAFF;
+    color: white;
+}
+.list-group a{
+    text-decoration: none;
+    color: white;
+}
+.take-quiz:hover{
+    background-color: #0076FF;
+    color: white;
+}
+.not-take:hover{
+    background-color: #0076FF;
+    color: white;
+}
+.card{
+    margin-bottom: 5px;
+}
+.learn-card-text{
+    text-align: left !important;
+}
+.learn-card-text .quiz-link{
+    color: #1B5E20;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.learn-card-text .quiz-num{
+    color: #BDBDBD;
+}
+.quiz-status{
+    color: #BDBDBD;
+    font-weight: 500;
+    font-size: 14px;
+}

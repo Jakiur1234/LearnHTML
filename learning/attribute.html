@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="css/samestyle.css">
+        <title>HTML Attributes</title>
+    </head>
+    <body class="noselect">
+        <div class="container-fluid">
+            <div class="row header align-items-center">
+              <div class="col-2 header-left">
+                <i class="fas fa-arrow-left"onclick="back()"></i>
+              </div>
+              <div class="col-8 header-title ">
+      
+              </div>
+              <div class="col-2 header-right">
+                <i class="fas fa-home"onclick="home()"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main">
+            <div class="row align-items-center main-content">
+                <div class="col">
+                <h5>HTML Attributes</h5> 
+                HTML attributes মূলত html start tag এর সাথে অবস্থান করে এবং html elements সম্পর্কে অতিরিক্ত তথ্য প্রদান করে ।
+	            <br/>
+                <h5>
+                    Example of Attributes
+                </h5> 
+                <div class="example">
+                <pre class="example-code"><div class="code-highlights"id="example1">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;a href="https://www.google.com"target="blank"&gt;Go to google&lt;/a&gt;
+&lt;br /&gt;
+&lt;img src="learning/images/intro-1.jpg"height="200px"width="200px"/&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn1">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+                   <a href="https://www.google.com"target="blank">Go to google</a>
+                    <br />
+                   <img src="images/intro-1.jpg"height="200px"width="200px"/>
+               </div>
+                <br>
+            <h5>Example এর বর্ণনা</h5> 
+<ul>
+	<li>
+     	উপরের উদাহরণ থেকে স্পষ্টভাবে বোঝা যাচ্ছে যে
+         কোনো ট্যাগ এর start tag এ attribute লিখতে হয় ।
+         attribute লেখার নিয়ম :
+         <ul>
+         	<li>
+     	        <span class="highlight">&lt;start_tag atrribute_name = "value"&gt;&lt;/end_tag&gt;</span>
+                 (end tag তখনই হবে যখন tag টি empty নয় ।)
+             </li>
+             <li>
+             	উপরের example এ <span class="highlight">&lt;a&gt;</span>
+                 tag এর attribute হলো <span class="highlight">href</span> এবং
+                 <span class="highlight">target</span> যাদের value যথাক্রমে 
+                 <span class="highlight">"link"</span> এবং <span class="highlight">"_blank"</span>
+                </li>
+              </ul>
+     </li>
+</ul>
+
+<div class="alert alert-primary"role="alert">
+	<i class="fas fa-lightbulb"></i>
+	<strong>
+		Note and Fun :
+     </strong>
+     আপনাকে এখন শুধু এতটুকু মনে রাখলেই চলবে যে  attribute কিভাবে লিখতে হয় !!
+     এখন থেকে ধীরে ধীরে আমরা অনেক অনেক tag এবং attribute দেখবো
+     সাথে এদের ব্যাবহার ও দেখবো । আগেই ঘাবড়ানোর কিছু নেই href , target , src ইত্যাদি দেখে ।
+     যখন এগুলো শিখে ফেলবেন আপনি html এর রাজা হয়ে যাবেন <i class ="fas fa-smile"></i> ।
+</div>
+<br>
+	<h5>
+		নিচে কিছু গুরুত্বপূর্ণ html tag এর ছক দেখানো হলো 
+	</h5>
+<strong>
+মনোযোগ দিয়ে দেখুন কোনটার কি 
+কাজ আমরা ধীরে ধীরে সব শিখবো । 
+তবে আগে ভাগেই
+ একটু জেনে রাখতে ক্ষতি কি?
+</strong>
+
+<table class="table table-dark"style="text-align:center;">
+<thead class="thead-dark">
+    <tr scope="row">
+        <th>
+		     Tag name
+        </th>
+        <th>
+        	tag এর কাজ
+        </th>
+     </tr>
+     </thead>
+     <tr>	
+         <td>
+         	<span class="highlight">&lt;html <br>lang = "en"&gt;</span>
+         </td>
+          <td>
+             এটা ডকুমেন্টের ল্যাঙ্গুয়েজ ডিফাইন করে ।
+         </td>  
+     </tr>
+        <tr>	
+         <td>
+         	<span class="highlight">href=<br>"https://<br>google.com"</span>
+         </td>
+          <td>
+             href attribute মূলত লিংক এবং হাইপার লিংক
+             ধারণ করে ।
+         </td>  
+     </tr>
+          <tr>	
+         <td>
+         	<span class="highlight">style=<br>"color:red"</span>
+         </td>
+          <td>
+             এটা মূলত css ধারণ করে । এই attribute এর
+             ভিতরে css কোড লেখা যায় এবং ডকুমেন্ট কে 
+             style বা নান্দনিক করা যায় । এটাকে inline css ও
+             বলা হয়। যখন আমরা learn css app লঞ্চ সেখান
+             থেকে শিখতে পারবেন ।
+         </td>  
+     </tr>
+          <tr>	
+         <td>
+         	<span class="highlight">id = "  " এবং class="  "</span>
+         </td>
+          <td>
+             id এবং class এর ব্যাবহার অনেক । html এর যেকোনো 
+             অংশ এককভাবে চেনার জন্য id এবং class ব্যাবহার করা ।
+             html id এবং class এর উপর আমাদের দুইটা লেসন আছে ।
+             সো নো টেনসন । সব শিখে ফেলতে পারবেন ।
+         </td>  
+     </tr>
+</table>
+
+<a href="https://www.w3schools.com/TAgs/default.asp">আরও  অনেক ট্যাগ ।</a>
+	
+	
+
+        <!---Footer Row-->
+        <div class="row align-items-center main-content">
+            <div class="col-3 prev"onclick="prev()">
+                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
+            </div>
+            <div class="col-6 exam">
+                <button onclick="quiz()"class="btn btn-primary">
+                    কুইজ দিন
+                </button>
+            </div>
+            <div class="col-3 next"onclick="next()">
+                <i class="fas fa-arrow-right"style="color: #1E88E5;"></i>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="../jquery&popper/jqueryslim.js"></script>
+        <script src="../jquery&popper/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../cordova.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            //highlights the code
+            w3CodeColor(document.querySelector(".code-highlights"));
+      
+            const example1 = document.getElementById("example1").innerText;
+            const example1btn = document.querySelector(".try-btn1");
+
+            example1btn.onclick = ()=>{
+                localStorage.setItem("example",example1);
+                window.location.href = "../editor.html";
+            }
+            localStorage.setItem("whereYouRead","4");
+
+            //send user on home page
+            function home(){
+                window.location.href = "../index.html";
+            }
+            function prev(){
+                window.location.href = "element.html";
+            }
+            function next(){
+                window.location.href = "heading.html";
+            }
+            function back(){
+                window.history.back();
+            }
+
+            //send user on quiz
+            function quiz(){
+                window.location.href = "../quiz/attribute.html";
+            }
+        </script>
+    </body>
+</html>

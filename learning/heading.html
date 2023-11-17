@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="css/samestyle.css">
+        <title>HTML Headings</title>
+    </head>
+    <body class="noselect">
+        <div class="container-fluid">
+            <div class="row header align-items-center">
+              <div class="col-2 header-left">
+                <i class="fas fa-arrow-left"onclick="back()"></i>
+              </div>
+              <div class="col-8 header-title ">
+      
+              </div>
+              <div class="col-2 header-right">
+                <i class="fas fa-home"onclick="home()"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main">
+            <div class="row align-items-center main-content">
+                <div class="col">
+                <h5>HTML Headings</h5> 
+                HTML headings ট্যাগ মূলত কোনো ওয়েব পেইজের 
+                বা ডকুমেন্টের হেডিং কে নির্দেশ করে । Heading দিয়ে 
+                মূলত কোনো ওয়েব পেইজের মূল বক্তব্য নাম বা হেডলাইন লেখা
+                হয় । html এ 6 ধরনের heading আছে । নিচের উদাহরন এ 6 ধরনের 
+                heading দেখানো হলো আশা করি এরপর আর হেডিং সক্রান্ত কোনো সমস্যা 
+                থাকবে না  ।
+                <br>
+                <br/>
+	            <h5>
+                    Heading Example
+                </h5> 
+
+                <div class="example">
+                <pre class="example-code"><div class="code-highlights"id="example1">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn1">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br/>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+                   
+               </div>
+                <br>
+            <h5>Heading Style</h5> 
+            যদিও প্রত্যেক heading এর একটি নির্দিষ্ট size
+            আছে । তবুও আপনি চাইলে সেটা পরিবর্তন করতে পারবেন
+            style attributes এর সাহায্যে । 
+            
+            <div class="example">
+                <pre class="example-code"><div class="code-highlights1"id="example2">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is default h1&lt;/h1&gt;
+&lt;h1 style="font-size : 100px;"&gt;This is 100px size h1&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn2">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+              <h1>This is default h1</h1>
+              <h1 style="font-size : 100px">
+              	This is 100px size h1
+              </h1>
+ </div>
+            
+<br>
+        <!---Footer Row-->
+        <div class="row align-items-center main-content">
+            <div class="col-3 prev">
+                    <div class="col-3 next"onclick="prev()">
+                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
+            </div>
+            </div>
+            <div class="col-6 exam">
+                <button onclick="quiz()"class="btn btn-primary">
+                    কুইজ দিন
+                </button>
+            </div>
+            <div class="col-3 next"onclick="next()">
+                <i class="fas fa-arrow-right"style="color: #1E88E5;"></i>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="../jquery&popper/jqueryslim.js"></script>
+        <script src="../jquery&popper/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../cordova.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+        	w3CodeColor(document.querySelector(".code-highlights"));
+            w3CodeColor(document.querySelector(".code-highlights1"));
+        	
+            const example1 = document.getElementById("example1").innerText;
+            const example2 = document.getElementById("example2").innerText;
+            const example1btn = document.querySelector(".try-btn1");
+            const example2btn = document.querySelector(".try-btn2");
+
+            example1btn.onclick = ()=>{
+                localStorage.setItem("example",example1);
+                window.location.href = "../editor.html";
+            }
+            example2btn.onclick = ()=>{
+                localStorage.setItem("example",example2);
+                window.location.href = "../editor.html";
+            }
+            localStorage.setItem("whereYouRead","5");
+
+            //send user on home page
+            function home(){
+                window.location.href = "../index.html";
+            }
+            function prev(){
+                window.location.href = "attribute.html";
+            }
+            function next(){
+                window.location.href = "paragraph.html";
+            }
+            function back(){
+                window.history.back();
+            }
+
+            //send user on quiz
+            function quiz(){
+                window.location.href = "../quiz/heading.html";
+            }
+        </script>
+    </body>
+</html>

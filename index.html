@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Learn HTML</title>
+</head>
+
+<body class="noselect">
+  <div class="splashScreen">
+    <div class="conatiner">
+      <div class="row align-items-center">
+        <div class="col text">
+          Learn HTML
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col loader-con">
+          <div style="padding: 30px;">
+            <div class="spinner-border text-success" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+
+          <p>
+            <i>
+              Developed By : <a href="https://zeropreface.com/">ZeroPreface</a>
+            </i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row header align-items-center">
+      <div class="col-2 header-left">
+        <i class="fas fa-bars" onclick="openNav()"></i>
+      </div>
+      <div class="col-8 header-title ">
+
+      </div>
+      <div class="col-2 header-right">
+        <i class="fas fa-share"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay">
+
+  </div>
+
+
+  <div id="mySidenav" class="sidenav">
+    <div style="padding: 15px;">
+      <h1 style="font-size: 20px;">
+        Learn HTML
+      </h1>
+      <small>
+        version : 1.0.0
+      </small>
+    </div>
+
+    <a href="index.html" class="active"><i class="fas fa-home"></i> হোম</a>
+    <a href="editor.html"><i class="fas fa-code"></i> কোড ইডিটর</a>
+    <a href="learning_step.html"><i class="fa-solid fa-stairs"></i> শেখার ধাপসমূহ</a>
+    <a href="quiz.html"><i class="fas fa-graduation-cap"></i> কুইজ</a>
+    <a href="settings.html"><i class="fa-solid fa-gear"></i> সেটিংস</a>
+    <a href="privacy.html"><i class="fas fa-book"></i> Privacy Policy</a>
+    <a href="terms.html"><i class="fa-solid fa-clipboard-list"></i> Terms and Condition</a>
+  </div>
+
+  <div class="container-fluid main">
+    <div class="row main-index-body">
+      <div class="col-12">
+        <div class="what">
+          <h1 class="l-p">
+            Learning Progress
+          </h1>
+          <span class="whatit" data-toggle="modal" data-target="#whatitismodal">
+            এটা কি ?
+          </span>
+
+          <div class="modal fade" id="whatitismodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-circle-info"></i> Info</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="text-align: left;">
+                  এই learning progress টি 100% করলে আপনাকে একটা certificate দেয়া হবে ।
+                  <br>
+                  <br>
+                  আপনার learning progress টি আপনার quiz score এর মাধ্যমে পরিমাপ করা হবে ।
+                  <br>
+                  <br>
+                  তাই ভালোভাবে শিখে কুইজে ভালো ফলাফল করুন ।
+                  <br>
+                  <br>
+                  ধন্যবাদ ।
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="progress" style="background-color: #76B2F8;height:50px;">
+          <div class="progress-bar" role="progressbar" style="width: 0%;background-color: #0076FF;font-size: 20px;"
+            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <span class="show-progress-value">
+              0%
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col" style="text-align : center;display: none;" id="certificate">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#details"
+          aria-expanded="false">
+          ডাউনলোড সার্টিফিকেট
+        </button>
+        <div class="collapse" id="details">
+          <div class="card card-body">
+            <p style="text-align: justify;">
+              কোর্স টা শেষ করার জন্য ধন্যবাদ । নিচের ডাউনলোড লেখাটিতে চাপ দিয়ে আপনার
+              ইমেইল এবং নাম ইনপুট দিন । আপনার মেইলে একটা সার্টিফিকেট মেইল করে পাঠানো হবে ।
+              <br />
+            <div style="text-align: center;">
+              <button class="btn btn-primary" onclick="certificate()">
+                ডাউনলোড
+              </button>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert-danger" id="alert-fo-no-read" role="alert" style="padding : 10px;display : none;">
+      আপনি এখনো পড়া শুরু করেননি ।
+    </div>
+
+    <div class="row main-index-body align-items-center">
+      <div class="col-5 card-board learning-steps">
+        <span>
+          শেখার
+          <br>
+          ধাপসমূহে যান
+          <br>
+          <i class="fa-solid fa-play"></i>
+        </span>
+      </div>
+      <div class="col-2">
+
+      </div>
+      <div class="col-5 card-board where-last-read">
+        সর্বশেষ যেখানে
+        <br>
+        পড়েছিলেন
+        <br>
+        <i class="fa-solid fa-arrow-right"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="row main-index-body align-items-center">
+      <div class="col-5 card-board start-quiz">
+        <span>
+          কুইজ
+          <br>
+          দিন
+          <br>
+          <i class="fa-solid fa-graduation-cap"></i>
+        </span>
+      </div>
+      <div class="col-2">
+
+      </div>
+      <div class="col-5 card-board start-code">
+        <span>
+          কোড
+          <br>
+          এডিটরে যান
+          <br>
+          <i class="fa-solid fa-code"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="row main-index-body align-items-center">
+      <div class="col-5 card-board report-bug">
+        <span>
+          বাগ সম্পর্কে
+          <br>
+          লিখুন
+          <br>
+          <i class="fa-solid fa-bug"></i>
+        </span>
+      </div>
+      <div class="col-2">
+
+      </div>
+      <div class="col-5 card-board rate-us">
+        <span>
+          রেটিং
+          <br>
+          দিন
+          <br>
+          <i class="fa-solid fa-face-smile"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="row align-items-center main-index-body Community">
+      <div class="col-8">
+        Join Our Community
+      </div>
+      <div class="col-4" style="text-align:center;">
+        <button class="btn btn-primary" onclick="window.location.href='https://facebook.com/groups/3552678344786491'">
+          Join
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="jquery&popper/jqueryslim.js"></script>
+  <script src="jquery&popper/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="cordova.js"></script>
+  <script src="sweetalert/sweetalert.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+    var overlay = document.querySelector(".overlay");
+    var crossbtn = document.querySelector(".crossbar");
+    var right = document.querySelector(".header-right");
+
+    right.onclick = function () {
+      window.plugins.socialsharing.share(
+        'I am demo user of Learn HTML App.This app coming soon on playstore.',
+        'Learn HTML App',
+        'https://apps.zeropreface.com/images/banner.jpg',
+        'https://zeropreface.com'
+      )
+    }
+    var right = document.querySelector(".header-right");
+
+    right.onclick = function () {
+      window.plugins.socialsharing.share(
+        'I am demo user of Learn HTML App.This app coming soon on playstore.',
+        'Learn HTML App',
+        'https://apps.zeropreface.com/images/banner.jpg',
+        'https://zeropreface.com'
+      )
+    }
+
+    overlay.onclick = function () {
+      document.getElementById("mySidenav").style.width = "0";
+      overlay.style.display = "none";
+      crossbtn.style.display = "none";
+    }
+
+    crossbtn.onclick = () => {
+      document.getElementById("mySidenav").style.width = "0";
+      overlay.style.display = "none";
+      crossbtn.style.display = "none";
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+body{
+    background-color: #E7EAEC;
+    text-align : justify;
+}
+.main-content{
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+textarea{
+    width: 100%;
+    box-shadow: 2px 2px 2px 4px #eee;
+}
+ul{
+    padding-left: 20px;
+}
+.highlight{
+    color: red;
+    background-color: #eee;
+}
+.exam,.prev,.next{
+    text-align: center;
+}
+.output-example{
+	text-align: left;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	padding: 5px;
+}
+.example-code{
+    box-shadow: 0px 3px 10px #AAAAAA;
+    border-radius: 3px;
+    padding: 5px;
+}
+ul,li,.col,.highlights,body,strong,table,td,tr,p{
+    font-size: 15px;
+}

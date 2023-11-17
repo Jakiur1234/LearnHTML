@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="css/samestyle.css">
+        <title>HTML Quotations</title>
+    </head>
+    <body class="noselect">
+        <div class="container-fluid">
+            <div class="row header align-items-center">
+              <div class="col-2 header-left">
+                <i class="fas fa-arrow-left"onclick="back()"></i>
+              </div>
+              <div class="col-8 header-title ">
+      
+              </div>
+              <div class="col-2 header-right">
+                <i class="fas fa-home"onclick="home()"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main">
+            <div class="row align-items-center main-content">
+                <div class="col">
+                <h5>HTML <span class="highlight">&lt;blockquote&gt;</span>
+                  for quotation
+                 </h5> 
+                     কোনো একটি উৎস থেকে কোনো উদ্ধৃতি দেয়া হলে সেটা প্রকাশে html 
+                     <span class="highlight">&lt;blockqoute&gt;</span> ব্যাবহার করা হয় ।
+                <br>
+                <br/>
+	            <h5>
+                    Blockquote Example
+                </h5> 
+
+                <div class="example">
+                <pre class="example-code"><div class="code-highlights"id="example1">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;Here is a quote from WWF's website:&lt;/p&gt;
+&lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+&lt;/blockquote&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</div></pre>
+                <button class="btn btn-primary try-btn1">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br/>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+              <p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+                   
+               </div>
+                <br>
+            <h5>
+              HTML <span class="highlight">&lt;q&gt;</span>
+              for quotation
+           </h5> 
+           আমরা মূলত কোথাও short quotation এর প্রয়োজন পড়লে 
+           q ট্যাগ এর মাধ্যমে সেই quotation টি লিখবো। এক্ষেত্রে ব্রাউজার 
+           উদ্ধৃতির দুইপাশে quitation মার্ক দিয়ে দিবে । এক কথায় quotation 
+           mark দেয়ার প্রয়োজন পড়লে আমরা <span class="highlight">&lt;q&gt;</span>
+           ব্যাবহার করতে পারবো ।
+           <br>
+           	<h5>
+           	Blockquote Example
+               </h5>
+           <div class="example">
+                <pre class="example-code"><div class="code-highlights1"id="example2">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;We believe : 
+&lt;q&gt;You can learn HTML 
+easily.&lt;/q&gt;&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn2">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+<p>We believe: <q>You can learn HTML.</q></p>
+</div>
+<br>
+	<h5>HTML <span class="highlight">&lt;abbr&gt;</span></h5>
+     এটা মূলত abbreviation এর জন্য ব্যাবহার করা হয় ।
+     <br>
+     	<h5><span class="highlight">&lt;abbr&gt;</span> Example</h5>
+     <div class="example">
+                <pre class="example-code"><div class="code-highlights2"id="example3">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;abbr title="Bangladesh Preimere Leauge"&gt;
+BPL &lt;/abbr&gt; will start soon.
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn3">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+               	<abbr title="Bangladesh Preimere Leauge">
+                    BPL </abbr> will start soon.
+                </div>
+                <br>
+              <h5>HTML Address</h5>
+              <span class="highlight">&lt;address&gt;</span> tag মূলত html এর অ্যাড্রেস কে ডিফাইন করতে বা কারো
+কন্টাক্ট ইনফরমেশন রাখার ক্ষেত্রে ব্যাবহার করা হয় ।
+<br>
+	<h5>Address Example</h5>
+	<div class="example">
+                <pre class="example-code"><div class="code-highlights3"id="example4">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;address&gt;
+Written by AJDM Jakiur.&lt;br&gt;
+Visit us at:&lt;br&gt;
+zeropreface.com&lt;br&gt;
+Bangladesh&lt;br&gt;
++8801X-XXXXX
+&lt;/address&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn4">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+               	<address>
+Written by AJDM Jakiur.<br>
+Visit us at:<br>
+zeropreface.com<br>
+Bangladesh<br>
++8801X-XXXXX
+</address>
+                </div>
+                
+                
+  
+	
+	
+        <!---Footer Row-->
+        <div class="row align-items-center main-content">
+            <div class="col-3 prev">
+                    <div class="col-3 next"onclick="prev()">
+                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
+            </div>
+            </div>
+            <div class="col-6 exam">
+                <button onclick="quiz()"class="btn btn-primary">
+                    কুইজ দিন
+                </button>
+            </div>
+            <div class="col-3 next"onclick="next()">
+                <i class="fas fa-arrow-right"style="color: #1E88E5;"></i>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="../jquery&popper/jqueryslim.js"></script>
+        <script src="../jquery&popper/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../cordova.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+        	w3CodeColor(document.querySelector(".code-highlights"));
+w3CodeColor(document.querySelector(".code-highlights1"));
+w3CodeColor(document.querySelector(".code-highlights2"));
+w3CodeColor(document.querySelector(".code-highlights3"));
+
+            const example1 = document.getElementById("example1").innerText;
+            const example2 = document.getElementById("example2").innerText;
+const example3 = document.getElementById("example3").innerText;
+const example4 = document.getElementById("example4").innerText;
+
+            const example1btn = document.querySelector(".try-btn1");
+const example2btn = document.querySelector(".try-btn2");
+const example3btn = document.querySelector(".try-btn3");
+const example4btn = document.querySelector(".try-btn4");
+
+            example1btn.onclick = ()=>{
+                localStorage.setItem("example",example1);
+                window.location.href = "../editor.html";
+            }
+example2btn.onclick = ()=>{
+                localStorage.setItem("example",example2);
+                window.location.href = "../editor.html";
+            }
+example3btn.onclick = ()=>{
+                localStorage.setItem("example",example3);
+                window.location.href = "../editor.html";
+            }
+example4btn.onclick = ()=>{
+                localStorage.setItem("example",example4);
+                window.location.href = "../editor.html";
+            }
+            localStorage.setItem("whereYouRead","7");
+
+            //send user on home page
+            function home(){
+                window.location.href = "../index.html";
+            }
+            function prev(){
+                window.location.href = "paragraph.html";
+            }
+            function next(){
+                window.location.href = "comment.html";
+            }
+            function back(){
+                window.history.back();
+            }
+
+            //send user on quiz
+            function quiz(){
+                window.location.href = "../quiz/quotation.html";
+            }
+        </script>
+    </body>
+</html>

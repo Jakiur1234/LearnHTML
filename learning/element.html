@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="css/samestyle.css">
+        <title>HTML Elements</title>
+    </head>
+    <body class="noselect">
+        <div class="container-fluid">
+            <div class="row header align-items-center">
+              <div class="col-2 header-left">
+                <i class="fas fa-arrow-left"onclick="back()"></i>
+              </div>
+              <div class="col-8 header-title ">
+      
+              </div>
+              <div class="col-2 header-right">
+                <i class="fas fa-home"onclick="home()"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main">
+            <div class="row align-items-center main-content">
+                <div class="col">
+                <h5>HTML Tag</h5> 
+                HTML elements বুঝতে হলে আমাদের প্রথমে html tag বুঝতে হবে ।
+                HTML introduction এ আমরা উদাহরণে যে &lt;p&gt;,&lt;h1&gt;,&lt;,head&gt;,
+                &lt;body&gt; দেখেছি তার সবই html tag । প্রত্যেক html tag <span class="highlight"> &lt; </span>এবং <span class="highlight"> &gt;</span> 
+                 এর মাধ্যমে ঘেরা থাকে । এক কথায় <span class="highlight"> &lt; </span>এবং <span class="highlight"> &gt;</span>  দিয়ে
+                ঘেরা যেকোনো অংশই html tag ।
+                <br/>
+                <br/>
+	            <h5>
+                    Example of HTML Tag
+                </h5> 
+
+                <div class="example">
+                <pre class="example-code"><div class="code-highlights"id="example1">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading tag.&lt;/h1&gt;
+&lt;p&gt;This is a paragraph tag.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn1">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+                   <h1>This is a heading tag.</h1>
+                   <p>This is a paragraph tag.</p>
+               </div>
+                <br>
+            <h5>Example থেকে Tag নিয়ে আলোচনা</h5> 
+<ul>
+	<li>
+       <span class="highlight">&lt;!DOCTYPE html&gt;</span> থেকে শুরু করে <span class="highlight">&lt;p&gt;</span> পর্যন্ত যতগুলো <span class="highlight">&lt;</span> এবং <span class="highlight">&gt;</span> দিয়ে ঘেরা অংশ রয়েছে তার সবই html tag । উদাহরণ : <span class="highlight">&lt;html&gt;</span>,<span class="highlight">&lt;body&gt;</span>,<span class="highlight">&lt;head&gt;</span>,<span class="highlight">&lt;title&gt;</span>,<span class="highlight">&lt;h1&gt;</span>,<span class="highlight">&lt;p&gt;</span> এর সবই ট্যাগ ।
+     </li>
+	<li>
+		এখানে লক্ষণীয় প্রত্যেক tag এর একটা start এবং end tag থাকে । 
+    </li>
+	<li>
+     কোনো ট্যাগ যে অংশ থেকে শুরু হয় সেটা start ট্যাগ । যেমন : <span class="highlight">&lt;p&gt;</span>,<span class="highlight">&lt;html&gt;</span> ইত্যাদি । এগুলো হলো start ট্যাগ ।
+    </li>
+    <li>
+     কোনো ট্যাগ যে অংশ থেকে শেষ হয় সেটাকে end tag বলে । যেমন : <span class="highlight">&lt;p&gt;</span> এর end tag হলো <span class="highlight">&lt;/p&gt;</span>,<span class="highlight">&lt;html&gt;</span> ট্যাগের end ট্যাগ হলো <span class="highlight">&lt;/html&gt;</span> ইত্যাদি ।
+   </li>
+</ul>
+<br>
+	<h5>
+		Empty and Nested Tag
+	</h5>
+	যে সব ট্যাগের start ট্যাগ আছে কিন্তু end ট্যাগ নাই তাদের empty ট্যাগ বলে ।
+	যেমন : <span class="highlight">&lt;br /&gt;</span>,<span class="highlight">&lt;hr /&gt;</span>,<span class="highlight">&lt;img /&gt;</span> ইত্যাদি ।
+    <br />
+    <br />
+    কোনো টাগের ভিতরে আরো একটা ট্যাগ থাকলে সেটাকে বলা হয় nested ট্যাগ ।
+    নিচের example এ nested ট্যাগ দেখানো হলো :
+    <br />
+    
+            <div class="example">
+            <pre class="example-code"><div class="code-highlights-1"id="example2">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-----body tag nested in html tag.-------&gt;
+&lt;p&gt;
+This p tag is nested in body tag
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;!----br is a empty tag----&gt;
+&lt;span&gt;
+    This tag nested in paragraph tag
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn2">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+                	<div class="alert alert-primary"role="alert">
+                	<strong>
+                	<i class="fas fa-lightbulb"></i> Note : 
+                    </strong>
+	                 উপরের উদাহরণে &lt;!------ দিয়ে যে অংশগুলো আছে এর সবই মূলত কমেন্ট ,
+	                 কোড বোঝার জন্য আমরা কমেন্ট ব্যাবহার করি । পরে এ নিয়ে আলোচনা হবে ।
+	                এখনই মাথা খারাপ করার প্রয়োজন নেই ।
+                   </div>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+               	<!-----body tag nested in html tag.------->
+                   <p>
+                  This p tag is nested in body tag
+                 <br />
+                 <br />
+                <!----br is a empty tag---->
+               <span>
+	           This tag nested in paragraph tag
+              </span>
+               </p>
+               </div>
+                   <br>
+            <h5>Example থেকে nested এবং empty ট্যাগের ব্যাখ্যা </h5> 
+<ul>
+	<li>
+       <span class="highlight">&lt;!DOCTYPE html&gt;</span> এবং <span class="highlight">&lt;br /&gt;</span> উদাহরনে এই ট্যাগ দুইটা হলো empty ট্যাগ কারণ এদের start tag আছে কিন্তু end tag নেই ।
+     </li>
+     <li>
+     	এখানে <span class="highlight">&lt;html&gt;</span> ট্যাগের ভিতরে <span class="highlight">&lt;body&gt;</span> ট্যাগ আছে । এখানে <span class="highlight">&lt;body&gt;</span> ট্যাগ <span class="highlight">&lt;html&gt;</span> ট্যাগের ভিতরে অর্থাৎ nested । এভাবে উদাহরণ থেকে বলা যায়
+          <span class="highlight">&lt;p&gt;</span> ট্যাগ <span class="highlight">&lt;body&gt;</span> ট্যাগের ভিতর আবার <span class="highlight">&lt;span&gt;</span> এবং <span class="highlight">&lt;br /&gt;</span> ট্যাগ <span class="highlight">&lt;p&gt;</span> ট্যাগের ভিতর nested হয়ে আছে ।
+         </li>
+</ul>
+      <div class="alert alert-secondary"role="alert">
+      	<strong>
+      	   <i class="fas fa-face-smile-beam"></i> Fun : 
+         </strong>
+          আমার মনে হয় না আপনার আর nested ট্যাগ বুঝতে প্রবলেম হবে !!!
+          আপনি ধীরে ধীরে html এর রাজা হয়ে যাবেন <i class="fas fa-face-laugh"></i> !!!
+        </div>
+        
+        <h5>HTML Elements</h5>
+        আমরা শিখেছি প্রত্যেক ট্যাগ এর start এবং end ট্যাগ থাকে ।
+        এই start এবং end ট্যাগের মাঝখানে অবস্থান করে element content ।
+        Element content এবং tag সহ পুরো অংশটিকে HTML Elements বলা হয় ।
+        <br />
+        <br />
+        <h5>Example of HTML Elements</h5>
+                <div class="example">
+                <pre class="example-code"><div class="code-highlights-2"id="example3">&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This is element content.&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn3">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+               	<h1>This is element content.</h1>
+               </div>
+                <br>
+            <h5>Example এর ব্যাখ্যা</h5> 
+<ul>
+	<li>
+     	start tag : <span class="highlight">&lt;h1&gt;</span>.
+     </li>
+     <li>
+     	element content : <span class="highlight">This is element content.</span>
+     </li>
+     <li>
+     	end tag : <span class="highlight">&lt;/h1&gt;</span>
+     </li>
+     <li>
+     	তিনটিকে একত্রে বলা হচ্ছে <span class="highlight">HTML Elements.</span>
+     </li>
+</ul>    
+    <br />
+    <h5>
+    	Nested and Empty Elements
+    </h5>
+    যে সকল html elements একটা element এর ভিতরে আরেকটা থাকে তাদের nested
+    elements বলা হয় যা nested ট্যাগ এর মত একই । একটা ট্যাগের ভিতরে আরেকটা ট্যাগ 
+    থাকলে যেমন নেস্টেড ট্যাগ তেমনি element থাকলে সেটাকে nested 
+    element বলা হয় । আর empty HTML tag গুলোকেই empty HTML elements বলা হয় ।
+    <br />
+    <br />
+    <h5>
+    	Example of Empty and Nested HTML Elements
+    </h5>
+    
+                <div class="example">
+                <pre class="example-code"><div class="code-highlights-3"id="example4">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt; 
+    &lt;b&gt;
+        Bold Text
+    &lt;/b&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn4">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+                <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+               	<p> 
+	                  <b>
+		                 Bold Text
+                    </b>
+               </p>
+               </div>
+                <br>
+            <h5>
+              Example থেকে Empty এবং Nested HTML elements
+             </h5> 
+<ul>
+	<li>
+     	এখানে <span class="highlight">&lt;p&gt;</span> Element এর ভিতর <span class="highlight">&lt;b&gt;Bold Text &lt;/b&gt;</span>
+         element আছে এইটা nested element.
+     </li>
+     List of Empty HTML elements : 
+     <ul>
+     	<li>
+         <span class="highlight">&lt;meta /&gt;</span>
+         </li>
+         <li>
+     	<span class="highlight">&lt;br /&gt;</span>
+         </li>
+         <li>
+     	<span class="highlight">&lt;hr /&gt;</span>
+         </li>
+         <li>
+     	<span class="highlight">&lt;img /&gt;</span>
+         </li>
+     </ul>
+</ul>
+
+        <!---Footer Row-->
+        <div class="row align-items-center main-content">
+            <div class="col-3 prev"onclick="prev()">
+                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
+            </div>
+            <div class="col-6 exam">
+                <button onclick="quiz()"class="btn btn-primary">
+                    কুইজ দিন
+                </button>
+            </div>
+            <div class="col-3 next"onclick="next()">
+                <i class="fas fa-arrow-right"style="color: #1E88E5;"></i>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="../jquery&popper/jqueryslim.js"></script>
+        <script src="../jquery&popper/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../cordova.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            //highights the code
+            w3CodeColor(document.querySelector(".code-highlights"));
+            w3CodeColor(document.querySelector(".code-highlights-1"));
+            w3CodeColor(document.querySelector(".code-highlights-2"));
+            w3CodeColor(document.querySelector(".code-highlights-3"));
+
+            var example1 = document.getElementById("example1").innerText;
+            var example1btn = document.querySelector(".try-btn1");
+            var example2 = document.getElementById("example2").innerText;
+            var example2btn = document.querySelector(".try-btn2");
+            var example3 = document.getElementById("example3").innerText;
+            var example3btn = document.querySelector(".try-btn3");
+            var example4 = document.getElementById("example4").innerText;
+            var example4btn = document.querySelector(".try-btn4");
+            
+            example1btn.onclick = ()=>{
+                localStorage.setItem("example",example1);
+                window.location.href = "../editor.html";
+            }
+            example2btn.onclick = ()=>{
+                localStorage.setItem("example",example2);
+                window.location.href = "../editor.html";
+            }
+            example3btn.onclick = ()=>{
+                localStorage.setItem("example",example3);
+                window.location.href = "../editor.html";
+            }
+            example4btn.onclick = ()=>{
+                localStorage.setItem("example",example4);
+                window.location.href = "../editor.html";
+            }
+            
+            //set reading system
+            localStorage.setItem("whereYouRead","3");
+
+            //send user on home page
+            function home(){
+                window.location.href = "../index.html";
+            }
+            function prev(){
+                window.location.href = "editor.html";
+            }
+            function next(){
+                window.location.href = "attribute.html";
+            }
+            function back(){
+                window.history.back();
+            }
+
+            //send user on quiz
+            function quiz(){
+                window.location.href = "../quiz/element.html";
+            }
+        </script>
+    </body>
+</html>

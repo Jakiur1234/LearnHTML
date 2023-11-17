@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="css/samestyle.css">
+        <title>HTML Color</title>
+    </head>
+    <body class="noselect">
+        <div class="container-fluid">
+            <div class="row header align-items-center">
+              <div class="col-2 header-left">
+                <i class="fas fa-arrow-left"onclick="back()"></i>
+              </div>
+              <div class="col-8 header-title ">
+      
+              </div>
+              <div class="col-2 header-right">
+                <i class="fas fa-home"onclick="home()"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main">
+            <div class="row align-items-center main-content">
+                <div class="col">
+                <h5>HTML Color</h5> 
+                HTML কে সজ্জিত করার জন্য color এর ব্যাবহার ব্যাপক
+। আমরা color ছাড়া ওয়েব পেইজকে ভালোভাবে সজ্জিত করতে পারবো না। 
+আমরা এখন নিচে পরপর উদাহরণের সাহায্যে যথাক্রমে rgb,hsl,hex,hsla,rgba এই 
+color কোড গুলো উদাহরণ সহ বুঝবো । color কোড গুলো দেখুন আর নিজেরা প্র্যাকটিস করুন ।
+                <br>
+                <br/>
+	            <h5>
+                    Change background with rgb()
+                </h5> 
+                <div class="example">
+                <pre class="example-code"><div class="code-highlights"id="example1">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div style="background-color: rgb(255,99,71);"&gt;This background color is changed by rgb.&lt;/div&gt;
+&lt;br /&gt;
+&lt;div style="background-color: rgb(255,99,71);color:rgb(255,255,255);"&gt;This background and text color are changed by rgb.&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn1">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br/>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+                   <div style="background-color: rgb(255,99,71);">This background color is changed.</div>
+                   <br/>
+                    <div style="background-color: rgb(255,99,71);color:rgb(255,255,255);">This background color and text color are changed.</div>
+               </div>
+                <br>
+               <div class="alert alert-primary"role="alert">
+               	<i class ="fas fa-lightbulb"></i>
+		rgb color code এ মূলত তিনটি value দিতে হয় <span class="highlight">&lt;rgb(red , green, blue)&gt;</span>
+		rgb লিখে প্রথমে red color এর পরিমান দিতে হয় এরপর green এর পরিমাণ এবং সবশেষে blue এর পরিমাণ ।
+		এবং সবচেয়ে গুরুত্তপূর্ণ কথা rgb color code এ red,green এবং blue er5 পরিমাণ 255 এর বেশি দেয়া যাবে না ।
+		যেমন : rgb(260,350,770) এমন লেখা যাবে নাহ । এদের সর্বোচ্চ value হবে 255 ।
+</div>
+<br>            
+<h5>
+                    Change background with color name
+                </h5> 
+	                <div class="example">
+                <pre class="example-code"><div class="code-highlights1"id="example2">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div style="background-color: cyan;"&gt;This background color is changed by color name.&lt;/div&gt;
+&lt;br /&gt;
+&lt;div style="background-color: magenta;color:white;"&gt;This background and text color are changed by color name.&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn2">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br/>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+                   <div style="background-color: cyan;">This background color is changed.</div>
+                   <br/>
+                    <div style="background-color: magenta;color:white;">This background color and text color are changed.</div>
+               </div>
+                <br>
+               <div class="alert alert-primary"role="alert">
+               	<i class ="fas fa-lightbulb"></i>
+		উপরের উদাহরণে মূলত color এর নাম ব্যাবহার করে color change করা হয়েছে। 
+		তবে সকল ধরনের color নাম ব্যাবহার করে পাওয়া যায় না তাই এর solution হিসেবে color 
+		code গুলোকে ব্যাবহার করা হয় ।
+</div>
+<h5>
+                    Change background with hex and hsl color code
+                </h5> 
+	                <div class="example">
+                <pre class="example-code"><div class="code-highlights2"id="example3">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div style="background-color: #3cb371;"&gt;This background color is changed by hex code.&lt;/div&gt;
+&lt;br /&gt;
+&lt;div style="background-color: hsl(200,100%,50%);color:hsl(0,100%,100%);"&gt;This background and text color are changed by hsl code.&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn3">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br/>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+                   <div style="background-color: #3cb371;">This background color is changed.</div>
+                   <br/>
+                    <div style="background-color: hsl(200,100%,50%);color:hsl(0,100%,100%);">This background color and text color are changed.</div>
+               </div>
+                <br>
+               <div class="alert alert-primary"role="alert">
+               	<i class ="fas fa-lightbulb"></i>
+               hex color code মূলত <span class="highlight">#rrggbb</span> । এখানে প্রথমে red পরে green এবং সবশেষে blue 
+               এর hex কোড থাকে ।
+               <br />
+               hsl লেখার নিয়ম <span class="highlight">hsl( hue , saturation , lightness ) ।</span>প্রথমে hue এরপর stauration এবং সবশেষে 
+               lightness থাকে এই তিনটির কম্বিশনে মূলত নতুন color create হয় ।
+</div>
+<h5>
+                    Color Alpha/Opacity
+                </h5> 
+	                <div class="example">
+                <pre class="example-code"><div class="code-highlights3"id="example4">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1 style="background-color:rgba(255, 99, 71, 0);"&gt;rgba(255, 99, 71, 0)&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.2);"&gt;rgba(255, 99, 71, 0.2)&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.4);"&gt;rgba(255, 99, 71, 0.4)&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.6);"&gt;rgba(255, 99, 71, 0.6)&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 0.8);"&gt;rgba(255, 99, 71, 0.8)&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255, 99, 71, 1);"&gt;rgba(255, 99, 71, 1)&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn4">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br/>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+                   <h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+               </div>
+                <br>
+               <div class="alert alert-primary"role="alert">
+               	<i class ="fas fa-lightbulb"></i>
+		এই উদাহরণে মূলত opacity ব্যাবহার করা হয়েছে।  সর্বোচ্চ opacity এর মান 1 এবং সর্বনিম্ন 0 ।
+		opacity মূলত রং এর গারত্ত।  এক্ষেত্রে rgba তে একে alpha বলা হয়। 
+</div>
+<br>
+	<div class="alert alert-primary"role="alert">
+		নিচে দেয়া color picker থেকে যেকোনো color select করে তার 
+		rgb কোড অনায়াসে পেয়ে যাবেন তাই কোনো কোনো color এর কোড মুখস্ত 
+		রাখার প্রয়োজন নাই ।
+	</div>
+	<a href="https://www.w3schools.com/colors/colors_picker.asp">W3school Color Picker</a>
+<br>
+        <!---Footer Row-->
+        <div class="row align-items-center main-content">
+            <div class="col-3 prev">
+                    <div class="col-3 next"onclick="prev()">
+                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
+            </div>
+            </div>
+            <div class="col-6 exam">
+                <button onclick="quiz()"class="btn btn-primary">
+                    কুইজ দিন
+                </button>
+            </div>
+            <div class="col-3 next"onclick="next()">
+                <i class="fas fa-arrow-right"style="color: #1E88E5;"></i>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="../jquery&popper/jqueryslim.js"></script>
+        <script src="../jquery&popper/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../cordova.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+        	w3CodeColor(document.querySelector(".code-highlights"));
+w3CodeColor(document.querySelector(".code-highlights1"));
+w3CodeColor(document.querySelector(".code-highlights2"));
+w3CodeColor(document.querySelector(".code-highlights3"));
+
+            const example1 = document.getElementById("example1").innerText;
+            const example2 = document.getElementById("example2").innerText;
+const example3 = document.getElementById("example3").innerText;
+const example4 = document.getElementById("example4").innerText;
+
+            const example1btn = document.querySelector(".try-btn1");
+const example2btn = document.querySelector(".try-btn2");
+const example3btn = document.querySelector(".try-btn3");
+const example4btn = document.querySelector(".try-btn4");
+
+            example1btn.onclick = ()=>{
+                localStorage.setItem("example",example1);
+                window.location.href = "../editor.html";
+            }
+example2btn.onclick = ()=>{
+                localStorage.setItem("example",example2);
+                window.location.href = "../editor.html";
+            }
+example3btn.onclick = ()=>{
+                localStorage.setItem("example",example3);
+                window.location.href = "../editor.html";
+            }
+example4btn.onclick = ()=>{
+                localStorage.setItem("example",example4);
+                window.location.href = "../editor.html";
+            }
+            localStorage.setItem("whereYouRead","9");
+
+            //send user on home page
+            function home(){
+                window.location.href = "../index.html";
+            }
+            function prev(){
+                window.location.href = "comment.html";
+            }
+            function next(){
+                window.location.href = "css.html";
+            }
+            function back(){
+                window.history.back();
+            }
+
+            //send user on quiz
+            function quiz(){
+                window.location.href = "../quiz/color.html";
+            }
+        </script>
+    </body>
+</html>

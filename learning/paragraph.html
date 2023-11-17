@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="css/samestyle.css">
+        <title>HTML Paragraph</title>
+    </head>
+    <body class="noselect">
+        <div class="container-fluid">
+            <div class="row header align-items-center">
+              <div class="col-2 header-left">
+                <i class="fas fa-arrow-left"onclick="back()"></i>
+              </div>
+              <div class="col-8 header-title ">
+      
+              </div>
+              <div class="col-2 header-right">
+                <i class="fas fa-home"onclick="home()"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main">
+            <div class="row align-items-center main-content">
+                <div class="col">
+                <h5>HTML Paragraph</h5> 
+                HTML এ <span class="highlight">&lt;p&gt;</span> দ্বারা মূলত
+                প্যারাগ্রাফ কে ডিফাইন করা হয় । paragraph মূলত html এর p ট্যাগ এর
+                 ভিতরে লিখতে হয়  । <span class="highlight">&lt;p&gt;</span> এবং
+                 <span class="highlight">&lt;/p&gt;</span> এর ভিতরে যেকোনো প্যারাগ্রাফ
+                 বা article লিখা হয় ।
+                <br>
+                <br/>
+	            <h5>
+                   Paragraph Example
+                </h5> 
+
+                <div class="example">
+                <pre class="example-code"><div class="code-highlights"id="example1">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn1">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br/>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+               	<p>This is a paragraph</p>
+               </div>
+                <br>
+            <h5>Paragraph line break</h5>
+            আপনি যদি এর ভিতরে পর্যায়ক্রমিকভাবে লিখতে থাকেন
+            তাহলে এটা বড় হতে থাকবে আপনি যদি অনেক ফাঁকা ফাঁকা করে
+            লিখেন তবুও এটা শুধু একটা স্পেস দিবে তাই line break করতে আমরা
+            <span class="highlight">&lt;br /&gt;</span> ট্যাগ ব্যাবহার করি। 
+            নিচের উদাহরণের মাধ্যমে আমরা বিষয়টা পরিষ্কার বুঝতে পারবো ।
+<br>
+	<div class="example">
+                <pre class="example-code"><div class="code-highlights1"id="example2">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p&gt;Hello ! This app is developed by 
+
+Zeropreface
+
+and it is also a great 
+
+html                learning         app.
+This is without use br tag.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Hello ! This app is developed by 
+&lt;br /&gt;
+&lt;br /&gt;
+Zeropreface
+&lt;br /&gt;
+&lt;br /&gt;
+and it is also a great 
+&lt;br /&gt;
+&lt;br /&gt;
+html                learning         app.
+&lt;br /&gt;
+This is with br tag.
+&lt;p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn2">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+               	<p>Hello ! This app is developed by 
+
+Zeropreface
+
+and it is also a great 
+
+html                learning         app.
+This is without use br tag.
+                   </p>
+                   
+                   
+                   
+                
+                   <p>
+Hello ! This app is developed by 
+<br />
+<br />
+Zeropreface
+<br />
+<br />
+and it is also a great 
+<br />
+<br />
+html                learning         app.
+<br />
+This is with br tag.
+<p>
+                </div>
+                <br>
+         <h5>
+         	Example Explained 
+         </h5>
+         <ul>
+         	<li>
+         	   এখানে লক্ষণীয় যে আমরা <span class="highlight">&lt;br&gt;</span> না দিলে 
+                বা ব্যাবহার না করলে <span class="highlight">&lt;p&gt;</span> ট্যাগ এর ভিতরে
+                যতই স্পেস বা লাইন ব্রেক করি না কেনো সব plain text হিসেবে ব্রাউজার এ দেখা যাবে ।
+             </li>
+             <li>
+             	আমরা <span class="highlight">&lt;br&gt;</span> ব্যাবহার করে লাইন ব্রেক করতে 
+             পারলেও লেখার পরের স্পেস গুলাকে কন্ট্রোল করতে পারি না । এটার সমাধান হচ্ছে <span class="highlight">&lt;pre&gt;</span>
+             ট্যাগ ।
+             </li>
+         </ul>
+                	<div class="alert alert-primary"role="alert">
+                	<strong>
+                	<i class="fas fa-lightbulb"></i> 
+                    </strong>
+	                 আমরা <span class="highlight">&lt;pre&gt;</span>
+	tag ব্যাবহার করে একটা প্যারাগ্রাফ এর ভিতরে যেকোনো দেয়া স্পেস 
+	এবং লাইন ব্রেক সব দেখাতে পারবো । এর জন্য আমাদের <span class="highlight">&lt;pre&gt;</span>
+	ট্যাগ এর ভিতরে প্যারাগ্রাফ ট্যাগ কে রাখতে হবে । নিচের উদাহরণ লক্ষ্য করুন। 
+                   </div>
+                   
+                   <h5>HTML pre</h5>
+                   <div class="example">
+                <pre class="example-code"><div class="code-highlights2"id="example3">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;pre&gt;
+&lt;p&gt;This is a pre tag
+This is line break
+&lt;hr /&gt;
+This is double line break
+
+This           is               spacing
+&lt;/p&gt;
+&lt;/pre&gt;        
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn3">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+               	<pre>
+<p>This is a pre tag
+This is line break
+<hr />
+This is double line break
+
+This           is               spacing
+</p>
+</pre>      
+                </div>
+                <br />
+                <h5>
+                	Example Explained
+                </h5>
+                <ul>
+                	<li>
+                	   এই উদাহরণে আমরা <span class="highlight">&lt;pre&gt;</span>
+                tag এর ভিতরে যা লিখেছি তার সবই দেখাচ্ছে এবং সকল লাইন স্পেসিং এবং
+লাইন ব্রেকিং সহ ।
+                   </li>
+                   <li>
+                   	এখানে আলাদাভাবে একটা ট্যাগ <span class="highlight">&lt;hr&gt;</span>
+                   ব্যাবহার করা হয়েছে যেটাকে horizontal rule বলা হয় <span class="highlight">&lt;hr&gt;</span>
+                   দেয়ার ফলে horizontally একটা দাগ দেখা যাচ্ছে । কখনো যদি horizontally কিছু
+                   আলাদা করার প্রয়োজন পড়ে তখন আমরা এ রুল ব্যাবহার করতে পারি ।
+                   </li>
+                </ul>
+        <!---Footer Row-->
+        <div class="row align-items-center main-content">
+            <div class="col-3 prev">
+                    <div class="col-3 next"onclick="prev()">
+                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
+            </div>
+            </div>
+            <div class="col-6 exam">
+                <button onclick="quiz()"class="btn btn-primary">
+                    কুইজ দিন
+                </button>
+            </div>
+            <div class="col-3 next"onclick="next()">
+                <i class="fas fa-arrow-right"style="color: #1E88E5;"></i>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="../jquery&popper/jqueryslim.js"></script>
+        <script src="../jquery&popper/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../cordova.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+        	w3CodeColor(document.querySelector(".code-highlights"));
+            w3CodeColor(document.querySelector(".code-highlights1"));
+            w3CodeColor(document.querySelector(".code-highlights2"));
+            
+            const example1 = document.getElementById("example1").innerText;
+            const example2 = document.getElementById("example2").innerText;
+            const example3 = document.getElementById("example3").innerText;
+            
+            const example1btn = document.querySelector(".try-btn1");
+            const example2btn = document.querySelector(".try-btn2");
+            const example3btn = document.querySelector(".try-btn3");
+
+            example1btn.onclick = ()=>{
+                localStorage.setItem("example",example1);
+                window.location.href = "../editor.html";
+            }
+            example2btn.onclick = ()=>{
+                localStorage.setItem("example",example2);
+                window.location.href = "../editor.html";
+            }
+           example3btn.onclick = ()=>{
+                localStorage.setItem("example",example3);
+                window.location.href = "../editor.html";
+            }
+            localStorage.setItem("whereYouRead","6");
+
+            //send user on home page
+            function home(){
+                window.location.href = "../index.html";
+            }
+            function prev(){
+                window.location.href = "heading.html";
+            }
+            function next(){
+                window.location.href = "quotation.html";
+            }
+            function back(){
+                window.history.back();
+            }
+
+            //send user on quiz
+            function quiz(){
+                window.location.href = "../quiz/paragraph.html";
+            }
+        </script>
+    </body>
+</html>

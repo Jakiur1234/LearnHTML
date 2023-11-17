@@ -1,0 +1,76 @@
+body{
+    background-color: #ECEFF1;
+}
+.main-index-body{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.main-index-body .col-5 {
+    font-size: 15px;
+}
+.card-board{
+    background-color: #FFFFFF;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card-board i{
+    color: #0076FF;
+}
+.continue-learn{
+    display: none;
+}
+.l-p{
+    font-size: 22px;
+    float: left;
+}
+.what{
+    text-align: right;
+}
+.whatit{
+    color: #25A6D9;
+    cursor: pointer;
+}
+.last-read{
+    float: right;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+}
+.highlight{
+    background-color: red;
+    color: white;
+}
+.splashScreen{
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    z-index: 1200;
+    top: 0;
+}
+.splashScreen .text{
+    text-align: center;
+    color: #176559;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40%;
+}
+.splashScreen .loader-con{
+    margin-top: 0%;
+    text-align: center;
+}
+.splashScreen .loader{
+    height: 200px;
+}
+.Community{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+}

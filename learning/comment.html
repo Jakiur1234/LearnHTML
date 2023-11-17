@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="css/samestyle.css">
+        <title>HTML Comments</title>
+    </head>
+    <body class="noselect">
+        <div class="container-fluid">
+            <div class="row header align-items-center">
+              <div class="col-2 header-left">
+                <i class="fas fa-arrow-left"onclick="back()"></i>
+              </div>
+              <div class="col-8 header-title ">
+      
+              </div>
+              <div class="col-2 header-right">
+                <i class="fas fa-home"onclick="home()"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main">
+            <div class="row align-items-center main-content">
+                <div class="col">
+                <h5>HTML Comments</h5> 
+                HTML কোড এর বিভিন্ন অংশের ব্যাখ্যা করতে
+মূলত html comment ব্যাবহার করা হয় । html কমেন্ট ওয়েব পেইজে
+প্রদর্শিত হয় না। এটা শুধুমাত্র একটা কোডের ভিতরেই দেখা যায় এবং কোড বুঝতে সহায়তা
+করে। নিচের দেখানো উপায় মূলত কমেন্ট লেখা হয় এবং এই উপায়ে আমরা এক লাইনের কমেন্ট সহ
+বহু লাইনের কমেন্ট ও লিখতে পারবো : 
+<br>
+<span class="highlight">&lt;!--This is a comment--&gt;</span>
+                <br>
+                <br/>
+	            <h5>
+                    Comment Example
+                </h5> 
+
+                <div class="example">
+                <pre class="example-code"><div class="code-highlights"id="example1">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;!--This is a comment--&gt;
+&lt;p&gt;Comment is not show&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                <button class="btn btn-primary try-btn1">
+                    Try It Yourself <i class="fas fa-chevron-right"></i>
+                </button>
+                </div> 
+                <br/>
+               <h5>
+               	OUTPUT :
+               </h5>
+               <div class="output-example">
+              <h1>Comment is not show</h1>    
+               </div>
+                <br>
+<ul>
+	
+</ul>
+<br>
+        <!---Footer Row-->
+        <div class="row align-items-center main-content">
+            <div class="col-3 prev">
+                    <div class="col-3 next"onclick="prev()">
+                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
+            </div>
+            </div>
+            <div class="col-6 exam">
+                <button onclick="quiz()"class="btn btn-primary">
+                    কুইজ দিন
+                </button>
+            </div>
+            <div class="col-3 next"onclick="next()">
+                <i class="fas fa-arrow-right"style="color: #1E88E5;"></i>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="../jquery&popper/jqueryslim.js"></script>
+        <script src="../jquery&popper/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../cordova.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+        	w3CodeColor(document.querySelector(".code-highlights"));
+
+            const example1 = document.getElementById("example1").innerText;
+            const example1btn = document.querySelector(".try-btn1");
+
+            example1btn.onclick = ()=>{
+                localStorage.setItem("example",example1);
+                window.location.href = "../editor.html";
+            }
+            localStorage.setItem("whereYouRead","8");
+
+            //send user on home page
+            function home(){
+                window.location.href = "../index.html";
+            }
+            function prev(){
+                window.location.href = "quotation.html";
+            }
+            function next(){
+                window.location.href = "color.html";
+            }
+            function back(){
+                window.history.back();
+            }
+
+            //send user on quiz
+            function quiz(){
+                window.location.href = "../quiz/comment.html";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    background-color: #ECEFF1;
+}
+.main-con{
+    background: white;
+    margin-top: 54px;
+}
+.btn{
+    text-align: right;
+}
+small{
+    border-bottom: 1px solid black;
+}
+a{
+    text-decoration: none;
+    color: yellow;
+}

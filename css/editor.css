@@ -1,0 +1,50 @@
+.code-output{
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #0076FF;
+    border-radius: 10px;
+}
+#html{
+    position: fixed;
+    height: 100%;
+    margin-top: 60px;
+    background-color: #23241F;
+    color: #F92672;
+    width: 100%;
+}
+#css{
+    display: none;
+}
+#js{
+    display: none;
+}
+.code{
+    text-align: center;
+    background-color: #0076FF;
+    border-radius: 9px 0px 0px 9px;
+    color: white;
+    width: 100%;
+    padding: 5px;
+}
+.output-btn{
+    text-align: center;
+    background-color: white;
+    border-radius: 0px 9px 9px 0px;
+    color: black;
+    width: 100%;
+    padding: 5px;
+}
+#output{
+    display: none;
+}
+.output-con{
+    position: fixed;
+    margin-top: 60px;
+    height: 100%;
+}
+
+@media screen and (max-width<1000) {
+    .code-output{
+        display: inline;
+    }
+}

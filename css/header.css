@@ -1,0 +1,118 @@
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently                    supported by Chrome and Opera */
+  }
+  body{
+    margin-bottom: 10px;
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    padding: 10px;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    box-shadow: 0px 4px 2px -2px #C2C5C6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.header-left{
+    text-align: left;
+    cursor: pointer;
+    color: #1E88E5;
+}
+.header-title{
+    text-align: center;
+    font-weight: 500;
+    color: #000000;
+    font-weight: bold;
+}
+.header-right{
+    text-align: right;
+    cursor: pointer;
+    color: #1E88E5;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.1s;
+  }
+  
+  .sidenav a {
+    padding: 10px 15px 10px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #EEEEEE;
+  }
+  
+  .sidenav a:hover {
+    color: #000000;
+    background-color: #E0E0E0;
+  }
+
+  .sidenav .active{
+    color: #000000;
+    background-color: #E0E0E0;
+  }
+  .sidenav .menu{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+  }
+  .overlay{
+    position: fixed;
+    width: 100%; 
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    cursor: pointer;
+  }
+  .logo{
+    margin-top: 0%;
+  }
+  .logo .logo-img{
+    width: 100%;
+    top: 0;
+  }
+  .main{
+    margin-top: 60px;
+    z-index: -1;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .crossbar{
+    position: fixed;
+    top: 8%;
+    left: 78%;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 5;
+    color: yellow;
+    display: none;
+  }

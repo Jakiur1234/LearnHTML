@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="css/samestyle.css">
+        <title>HTML Editor</title>
+    </head>
+    <body class="noselect">
+        <div class="container-fluid">
+            <div class="row header align-items-center">
+              <div class="col-2 header-left">
+                <i class="fas fa-arrow-left"onclick="back()"></i>
+              </div>
+              <div class="col-8 header-title ">
+      
+              </div>
+              <div class="col-2 header-right">
+                <i class="fas fa-home"onclick="home()"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main">
+            <div class="row align-items-center main-content">
+                <div class="col">
+                    <h5>
+                        Editor কি?
+                    </h5> 
+                    যার সাহায্যে টেক্সট এডিট করা এবং সেভ করা যায়
+                    তাকে এডিটর বলে ।
+                    <br>
+                    html শেখার জন্য লিখে রান করা প্রয়োজন। html code
+                    editor এর সাহায্যে কোড লিখে রান করা যাবে। 
+                    <br>
+                    উইন্ডোজ এ নোটপ্যাড ব্যাবহার করে html কোড লেখা যায় ।
+                    এছাড়াও<span class="highlight"> আমাদের অ্যাপস এ 
+                    বিদ্যমান কোড এডিটর</span> এও html কোড
+                    লিখে রান করতে পারবেন। 
+                    <br>
+                    <br>
+                    <h5>
+                        কিছু জনপ্রিয় html এডিটর :
+                    </h5> 
+                    <ul>
+                        <li>Notepad</li>
+                        <li>Notepad ++</li>
+                        <li>Vs Code</li>
+                    </ul>
+                    <br>
+                    <h5>
+                        windows এ কোড লিখে রান করার উপায় :
+                    </h5> 
+                    
+                    Open Start > Programs > Accessories > Notepad
+                    <br>
+                    notepad চালু করার পূর্ববর্তী লেসনে দেখানো উপায়ে 
+                    কোড লিখে ফেলুন ।
+                    <br>
+                    এরপর save as এ গিয়ে ফাইলটি সেভ করার সময় .txt
+                    এর বদলে .html ব্যাবহার করুন । এখন সেভ করা ফাইলটি 
+                    ওপেন করলেই দেখবেন আপনি আপনার প্রথম কোড 
+                    এর ভিউ দেখতে পাবেন ।
+                    <br>
+                    <a href ="../editor.html">আমাদের কোড এডিটর</a>
+
+        <!---Footer Row-->
+        <div class="row align-items-center main-content">
+            <div class="col-3 prev"onclick="prev()">
+                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
+            </div>
+            <div class="col-6 exam">
+                <button onclick="quiz()"class="btn btn-primary">
+                    কুইজ দিন
+                </button>
+            </div>
+            <div class="col-3 next"onclick="next()">
+                <i class="fas fa-arrow-right"style="color: #1E88E5;"></i>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="../jquery&popper/jqueryslim.js"></script>
+        <script src="../jquery&popper/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../cordova.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            localStorage.setItem("whereYouRead","2");
+            
+            //send user on home page
+            function home(){
+                window.location.href = "../index.html";
+            }
+            function prev(){
+                window.location.href="intro.html";
+            }
+            function next(){
+                window.location.href = "element.html";
+            }
+            function back(){
+                window.history.back();
+            }
+            //send user on quiz
+            function quiz(){
+                window.location.href = "../quiz/editor.html";
+            };
+        </script>
+    </body>
+</html>

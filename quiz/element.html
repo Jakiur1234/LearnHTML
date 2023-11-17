@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element quiz</title>
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="main-body-structure">
+            <!-- start Quiz button -->
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>কুইজের নিয়মাবলী :</span></div>
+        <div class="info-list">
+            <div class="info">১। প্রত্যেক প্রশ্নের উত্তর দেয়ার জন্য <span>২০ সেকেন্ড</span> সময় পাবেন ।</div>
+            <div class="info">২। একবার একটা উত্তর এ  ক্লিক করলে আর তা পরিবর্তন করতে পারবেন নাহ ।</div>
+            <div class="info">৩। সময় শেষ হয়ে গেলে আর উত্তর দিতে বা পরিবর্তন করতে পারবেন নাহ ।</div>
+            <div class="info">৪। কুইজ চলা অবস্থায় কেটে দিতে পারবেন নাহ ।</div>
+            <div class="info">৫। প্রত্যেকটা সঠিক উত্তরের জন্য ১ নম্বর পাবেন ।</div>
+            <div class="info">৬। Learning Progress বাড়াতে হলে আপনাকে কমপক্ষে ৮০% নম্বর পেতে হবে ।</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Learn HTML Quiz System</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">20</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+    </div>
+    <script>
+      function back(){
+        window.history.back();
+      }
+      function home(){
+        window.location.href = "index.html";
+      }
+        // creating an array and passing the number, questions, options, and answers
+let questions = [
+    {
+    numb: 1,
+    question: "নিচের কোনটি empty tag?",
+    answer: "<br />",
+    options: [
+      "&lt;br /&gt;",
+      "&lt;body&gt;",
+      "&lt;html&gt;",
+      "&lt;p&gt"
+    ]
+  },
+    {
+    numb: 2,
+    question: "নিচের কোনটি start tag?",
+    answer: "<h1>",
+    options: [
+      "&lt;/html&gt;",
+      "&lt;/body&gt;",
+      "&lt;h1&gt;",
+      "None of the above"
+    ]
+  },
+    {
+    numb: 3,
+    question: "&lt;p&gt; tag এর end tag কোনটি?",
+    answer: "</p>",
+    options: [
+      "&lt;p&gt",
+      "&lt;h1&gt",
+      "&lt;/p&gt;",
+      "&lt;/h1&gt;"
+    ]
+  },
+    {
+    numb: 4,
+    question: "নিচের কোন ট্যাগটি nested?",
+    answer: "<p><br/><h1></h1></p>",
+    options: [
+      "&lt;p&gt;&lt;br/&gt;&lt;h1&gt;&lt;/h1&gt;",
+      "&lt;p&gt;&lt;br/&gt;&lt;h1&gt;&lt;/h1&gt;&lt;p&gt;",
+      "&lt;p&gt;&lt;br/&gt;&lt;h1&gt;&lt;/h1&gt;&lt;/p&gt;",
+      "&lt;p&gt;&lt;br/&gt;&lt;h1&gt;&lt;/h1&gt;&lt;/br&gt;"
+    ]
+  },
+    {
+    numb: 5,
+    question: "&lt;p&gt;I am a question &lt;/p&gt; কোনটি element content?",
+    answer: "I am a question",
+    options: [
+      "&lt;p&gt;",
+      "&lt;/p&gt;",
+      "I am a question",
+      "None of the above"
+    ]
+  },
+  {
+  numb: 6,
+    question: "&lt;p&gt;I am a question &lt;/p&gt; কোনটি element?",
+    answer: "None of the above",
+    options: [
+      "&lt;p&gt;",
+      "&lt;/p&gt;",
+      "I am a question",
+      "None of the above"
+    ]
+  },
+  {
+  numb: 7,
+    question: "নিচের কোনটি html elements?",
+    answer: "<h1>I am a question</h1>",
+    options: [
+      "&lt;p&gt;",
+      "&lt;/p&gt;",
+      "This is right ans",
+      "&lt;h1&gt;I am a question&lt;/h1&gt;"
+    ]
+  },
+];
+
+    </script>
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="../sweetalert/sweetalert.js"></script>
+    <script src="../cordova.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+</html>

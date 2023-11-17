@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute quiz</title>
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="main-body-structure">
+            <!-- start Quiz button -->
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>কুইজের নিয়মাবলী :</span></div>
+        <div class="info-list">
+            <div class="info">১। প্রত্যেক প্রশ্নের উত্তর দেয়ার জন্য <span>২০ সেকেন্ড</span> সময় পাবেন ।</div>
+            <div class="info">২। একবার একটা উত্তর এ  ক্লিক করলে আর তা পরিবর্তন করতে পারবেন নাহ ।</div>
+            <div class="info">৩। সময় শেষ হয়ে গেলে আর উত্তর দিতে বা পরিবর্তন করতে পারবেন নাহ ।</div>
+            <div class="info">৪। কুইজ চলা অবস্থায় কেটে দিতে পারবেন নাহ ।</div>
+            <div class="info">৫। প্রত্যেকটা সঠিক উত্তরের জন্য ১ নম্বর পাবেন ।</div>
+            <div class="info">৬। Learning Progress বাড়াতে হলে আপনাকে কমপক্ষে ৮০% নম্বর পেতে হবে ।</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Learn HTML Quiz System</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">20</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+    </div>
+    <script>
+      function back(){
+        window.history.back();
+      }
+      function home(){
+        window.location.href = "index.html";
+      }
+        // creating an array and passing the number, questions, options, and answers
+let questions = [
+    {
+    numb: 1,
+    question: "attribute কোথায় লেখা হয়?",
+    answer: "start tag এ",
+    options: [
+      "start tag এ",
+      "end tag এ",
+      "element content এ",
+      "element এ"
+    ]
+  },
+    {
+    numb: 2,
+    question: 'নিচের কোনটি সঠিক?',
+    answer: '(c) <p class="paragraph"></p>',
+    options: [
+      '(a) &lt;p class="paragraph&gt;&lt;/p&gt;',
+      '(b) &lt;p&gt;&lt;/p class="paragraph"&gt;',
+      '(c) &lt;p class="paragraph"&gt;&lt;/p&gt;',
+      "(d) None"
+    ]
+  },
+    {
+    numb: 3,
+    question: "lang attribute নিচের কোনটি নির্দেশ করে?",
+    answer: "language",
+    options: [
+      "langeuage en",
+      "language bn",
+      "language",
+      "lang en"
+    ]
+  },
+    {
+    numb: 4,
+    question: "আমরা html element কে কিসের সাহায্যে identify করবো?",
+    answer: "Both A and B",
+    options: [
+      "Id",
+      "Class",
+      "Both A and B",
+      "None of the above"
+    ]
+  },
+    {
+    numb: 5,
+    question: "href  attribute কোন ক্ষেত্রে ব্যাবহার করা হয়?",
+    answer: "For Link and Hyper Link",
+    options: [
+      "For link only",
+      "For hyperlink only",
+      "For Link and Hyper Link",
+      "None"
+    ]
+  },
+  // you can uncomment the below codes and make duplicate as more as you want to add question
+  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
+  //   {
+  //   numb: 6,
+  //   question: "Your Question is Here",
+  //   answer: "Correct answer of the question is here",
+  //   options: [
+  //     "Option 1",
+  //     "option 2",
+  //     "option 3",
+  //     "option 4"
+  //   ]
+  // },
+];
+
+    </script>
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="../sweetalert/sweetalert.js"></script>
+    <script src="../cordova.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+</html>
