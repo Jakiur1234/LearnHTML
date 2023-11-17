@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../fontawesome/css/all.css">
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="css/samestyle.css">
-        <title>HTML Link</title>
+        <title>HTML Hyperlink</title>
     </head>
     <body class="noselect">
         <div class="container-fluid">
@@ -27,13 +27,25 @@
         <div class="container-fluid main">
             <div class="row align-items-center main-content">
                 <div class="col">
-                <h5>HTML কি?</h5> 
+                <h5> <b>Hyperlink  কি?</b></h5> 
+                <p> 
+             হাইপারলিঙ্ক হচ্ছে একটি ওয়েবপেইজের কোনো একটি অংশের সাথে অন্যান্য পেইজের সংযোগ স্থাপন করা ।
+             একটি Hyperlink দিয়ে একটি শব্দের উপর বা কতগুলো শব্দের উপর লিঙ্ক দেওয়া যায় ।
+                </p>
+        <h5><b>কিভাবে  Hyperlink ব্যাবহার করতে হয় ?</b></h5>
+        <p>
+      এইচটিএমএল ট্যাগ &lt;a&gt; দ্বারা হাইপারলিঙ্ক স্থাপন করতে হয় । 
+      &lt;a&gt; ট্যাগের সাথে href attribute যোগ করতে হয় । 
+      <br>
+      গঠনঃ <span class="highlight"> &lt;a  href="url"&gt; Link text &lt;/a&gt;</span> 
+    </p>
+<p>
+      <h6> Default হিসাবে ব্রাউজার এ লিংক গুলো নিম্নরূপে থাকে ঃ</h6>
+        </p>
                 <ul>
-                    <li>HTML এর পূর্নরূপ হলো Hyper Text Makrup Language ।</li>
-                    <li>Web page তৈরির জন্য HTML একটা আদর্শ markup language ।</li>
-                    <li>HTML একটা ওয়েবসাইট এর কাঠামো তৈরি করতে ব্যাবহার করা হয় ।</li>
-                    <li>HTML অনেকগুলো elements এর সমন্বয়ে গঠিত হয় ।</li>
-                    <li>HTML elements গুলাই নির্ধারণ করে ব্রাউজার সকল কন্টেন্ট কিভাবে প্রদর্শিত হবে ।</li>
+                    <li>একটি অদেখা লিঙ্ক আন্ডারলাইন এবং নীল হয় ।</li>
+                    <li> একটি পরিদর্শন লিঙ্ক আন্ডারলাইন এবং বাদামী হয়।</li>
+                    <li>একটি সক্রিয় লিঙ্ক অ্যান্ডারলাইন এবং লাল হয়।</li>
                 </ul>
 	            <h5>
                     A Simple HTML Document
@@ -47,10 +59,7 @@
 <title>Page Title</title>
 </head>
 <body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+    &lt;a  href="url"&gt; Link text &lt;/a&gt;
 </body>
 </html>  
                 </textarea>
@@ -60,17 +69,35 @@
                 </button>
                 </div> 
                 <br>
-            <h5>Example এর বর্ণনা</h5> 
+            <h6>একটি লিঙ্ক সাধারণত দুইভাবে দেখা যায় ঃ-</h6> 
+            <ol style="margin:20px;">
+                <li>
+                 পেইজ লিঙ্ক এ ক্লিক করলে তা নিজস্ব উইন্ডো তে দেখাবে । 
+                </li>
+                <li>
+                    পেইজ টি নতুন কোনো উইন্ডো তে দেখাবে ।
+                </li>
+             </ol><br>
+
+<h6>
+   <b> "Target" attribute এর ব্যবহার করে লিঙ্ক কোন পেইজ এ ওপেন করা হবে তা নির্ধারণঃ-
+</b>
+</h6>
 <ul>
-	<li><span class="highlight">&lt;!DOCTYPE html&gt;</span> নির্দেশ করে এটা একটা html5 ডকুমেন্টস । </li>
-	<li><span class="highlight">&lt;html&gt;</span> element হচ্ছে html পেইজ এর মূল element । এর ভিতরেই html এর বাকি সকল element থাকে ।</li>
-	<li><span class="highlight">&lt;head&gt;</span>element একটা পেইজ এর এবং ওয়েবসাইট এর meta সম্পর্কিত সকল তথ্য ধারণ করে রাখে ।</li>
-	<li><span class="highlight">&lt;title&gt;</span> মূলত <span class="highlight">&lt;head&gt;</span> এর ভিতরে অবস্থান করে এবং এই elements এর ভিতরে থাকা তথ্য ওয়েব ব্রাউজার এর tab এর টাইটেল হিসেবে দেখানো হয় ।</li>
-	<li><span class="highlight">&lt;body&gt;</span> element ডকুমেন্টের মূল body নির্দেশ করে । এটা মূলত একটা container হিসেবে কাজ করে 
-     যেটা ওয়েব পেজের সকল দৃশ্যমান অংশ ধারণ করে । উদাহরণ হিসেবে বলা যায় headings,paragraph,img, link,hyperlink ইত্যাদি ।</li>
-	<li><span class="highlight">&lt;h1&gt;</span> সবচেয়ে বড় heading ট্যাগ । </li>
-	<li><span class="highlight">&lt;p&gt;</span> মূলত প্যারাগ্রাফ ট্যাগ কে নির্দেশ করে ।</li>
+    <li>
+         target="_blank"   একটি ওয়েবপেইজ নতুন উইন্ডোতে ওপেন করার ক্ষেত্রে ।
+    </li>
+    <li>
+        target="_self"   লিংককৃত পেইজটি বর্তমান ব্রাউজারেই ওপেন করবে।
+    </li>
+   <li>
+    target="_New"     নতুন ব্রাউজার উইন্ডোতে লিংককৃত পেইজটি ওপেন হবে।
+   </li>
+    <li>
+        target="_top"  লিংককৃত পেইজটি  বর্তমান উইন্ডোতে এবং সম্পূর্ণ উইন্ডো জুরে ওপেন হবে।
+   </li>
 </ul>
+<p>গঠনঃ <span class="highlight">  &lt;a  href="url" target="_blank"&gt; Link text &lt;/a&gt;  </p></span></p>
 <br>
 
         <!---Footer Row-->

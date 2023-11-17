@@ -27,94 +27,35 @@
         <div class="container-fluid main">
             <div class="row align-items-center main-content">
                 <div class="col">
-                    <h5>
-                        CSS কি?
-                    </h5>
-                    <p>
-                        CSS এর পুর্ণরুপ হল Cascading Style Sheet. CSS এর সাহায্যে আপনি 
-                        color, font, text size, margin, padding, background colors এইসব 
-                        পরিবর্তন করতে পারবে এবং ওয়েবসাইট কে আরও সুন্দর এবং উন্নত করে গড়ে তুলতে
-                        পারবে ।
-                    </p>
-                    <div class="alert alert-warning">
-                        <i class ="fas fa-lightbulb"></i> CSS এর সাহায্যে সকল element কে যেমন
-                        একসাথে ডিজাইন করতে পারবে ঠিক তেমন এই আলাদা আলাদা ভাবেও ডিজাইন করা যাবে । এতে সুবিধা হচ্ছে
-                        class এবং id ব্যবহার করে যেকোনো একটি নির্দিস্ট element কে অনেক সুন্দরভাবে ডিজাইন করা যায় ।
-                    </div>
-                    <h5>
-                        CSS এর ব্যবহারঃ
-                    </h5>
-                    <ul>
-                        <li>
-                            <b>Inline CSS : </b> HTML attribute এর মধ্যে <span class="highlight">style=""</span> 
-                            ব্যবহার করে "" এর ভিতরে CSS কোড লিখা হলে সেটাকে বলা হয় inline CSS.
-                        </li>
-                        <li>
-                            <b>Internal CSS : </b> HTML এর <span class="highlight">&lt;head&gt;</span>
-                            এর ভিতরে <span class="highlight">&lt;style&gt;</span> ব্যবহার করে এর ভিতরে css
-                            কোড ব্যবহার করা হলে তাকে Inrernal CSS বলে ।
-                        </li>
-                        <li>
-                            <b>External CSS : </b> মুল ডকুমেন্টের বাইরে <span class="highlight">.css</span> এক্সটেনশন ব্যবহার করে ফাইল তৈরি করে
-                            মূল HTML ডকুমেন্ট এ link এর সাহায্যে যুক্ত করলে তাকে external CSS বলা হয় ।
-                        </li>
-                    </ul>
-                    <br>
-                    <h5>
-                        Example এর সাহায্যে সকল CSS এর ধরন ব্যাখ্যা করা হলঃ
-                    </h5>
-                    <br>
-                    <h5>
-                        Example of inline CSS:
-                    </h5>
-                    <div class="example">
-<pre class="example-code"><div class="code-highlights"id="example1">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Page Title&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
+                <h5>HTML কি?</h5> 
+                <ul>
+                    <li>HTML এর পূর্নরূপ হলো Hyper Text Makrup Language ।</li>
+                    <li>Web page তৈরির জন্য HTML একটা আদর্শ markup language ।</li>
+                    <li>HTML একটা ওয়েবসাইট এর কাঠামো তৈরি করতে ব্যাবহার করা হয় ।</li>
+                    <li>HTML অনেকগুলো elements এর সমন্বয়ে গঠিত হয় ।</li>
+                    <li>HTML elements গুলাই নির্ধারণ করে ব্রাউজার সকল কন্টেন্ট কিভাবে প্রদর্শিত হবে ।</li>
+                </ul>
+	            <h5>
+                    A Simple HTML Document
+                </h5> 
 
-    &lt;div style="background-color: cyan;"&gt;এখানে background color inline css এর সাহায্যে পরিবর্তন করা হয়েছে । &lt;/div&gt;
+                <div class="example">
+                <textarea rows="13"id="example1"class="form-control">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
 
-&lt;/body&gt;
-&lt;/html&gt;</div></pre>
-                        <button class="btn btn-primary try-btn1">
-                            Try It Yourself <i class="fas fa-chevron-right"></i>
-                        </button>
-                        </div>
-                        <br>
-                        <h5>
-                            Inline CSS এর উদাহরণ এর বর্ননাঃ
-                        </h5>
-                        <ul>
-                            <li>
-                                এখানে <span class="highlight">div</span> ট্যাগ এর ভিতরে <span class="highlight">&lt;style&gt;</span>
-                                attribute এর মধ্যে যে ডিজাইন করা হয়েছে এটাকে inline css বলে ।
-                            </li>
-                        </ul>
-                        <br>
-                        <h5>
-                            Internal CSS Example:
-                        </h5>
-                        <div class="example">
-                <pre class="example-code"><div class="code-highlights1"id="example2">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Page Title&lt;/title&gt;
-&lt;style&gt;
-    div{
-        background-color: cyan;
-    }
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
 
-    &lt;div&gt;এখানে background color inline css এর সাহায্যে পরিবর্তন করা হয়েছে ।&lt;/div&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</div></pre>
-                <button class="btn btn-primary try-btn2">
+</body>
+</html>  
+                </textarea>
+                <br>
+                <button class="btn btn-primary try-btn1">
                     Try It Yourself <i class="fas fa-chevron-right"></i>
                 </button>
                 </div> 
