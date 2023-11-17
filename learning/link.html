@@ -1,160 +1,170 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../fontawesome/css/all.css">
-        <link rel="stylesheet" href="../css/header.css">
-        <link rel="stylesheet" href="css/samestyle.css">
-        <title>HTML Hyperlink</title>
-    </head>
-    <body class="noselect">
-        <div class="container-fluid">
-            <div class="row header align-items-center">
-              <div class="col-2 header-left">
-                <i class="fas fa-arrow-left"onclick="back()"></i>
-              </div>
-              <div class="col-8 header-title ">
-      
-              </div>
-              <div class="col-2 header-right">
-                <i class="fas fa-home"onclick="home()"></i>
-              </div>
-            </div>
-        </div>
 
-        <div class="container-fluid main">
-            <div class="row align-items-center main-content">
-                <div class="col">
-                <h5> <b>Hyperlink  কি?</b></h5> 
-                <p> 
-             হাইপারলিঙ্ক হচ্ছে একটি ওয়েবপেইজের কোনো একটি অংশের সাথে অন্যান্য পেইজের সংযোগ স্থাপন করা ।
-             একটি Hyperlink দিয়ে একটি শব্দের উপর বা কতগুলো শব্দের উপর লিঙ্ক দেওয়া যায় ।
-                </p>
-        <h5><b>কিভাবে  Hyperlink ব্যাবহার করতে হয় ?</b></h5>
-        <ul>
-      <li>এইচটিএমএল ট্যাগ <span class="highlight">" &lt;a&gt; " </span> দ্বারা হাইপারলিঙ্ক স্থাপন করতে হয় ।</li>
-      <li><span class="highlight">" &lt;a&gt; "</span> ট্যাগের সাথে <span class="highlight">" href "</span> attribute যোগ করতে হয় । </li>
-     <li><span class="highlight"> " href " </span>attributes এর পূর্ণরূপ <span class="highlight">" a hyperlink reference "</span></li>
-     <li> এখানে<span class="highlight"> " URL "</span> দ্বারা কোনো ওয়েবপেইজ এর পূর্ণ ঠিকানা বোঝানো হয়।</li>
-     <li> লিস্ট করার ক্ষেত্রে সময় বাঁচানোর জন্যে<span class="highlight"> " &lt;li&gt; "</span> ট্যাগ ব্যবহার করা হয় এবং তা আপনি লিস্টিং এর ক্ষেত্রে বিস্তারিত জানতে পারবেন।</li>
- </ul><br>
-     <p> গঠনঃ <span class="highlight"> &lt;a  href="url"&gt; Link text &lt;/a&gt;</span> </p>
-    
-
-      <h6> Default হিসাবে ব্রাউজার এ লিংক গুলো নিম্নরূপে থাকে ঃ</h6>
-        
-                <ul>
-                    <li>একটি অদেখা লিঙ্ক আন্ডারলাইন এবং নীল হয় ।</li>
-                    <li> একটি পরিদর্শন লিঙ্ক আন্ডারলাইন এবং বাদামী হয়।</li>
-                    <li>একটি সক্রিয় লিঙ্ক অ্যান্ডারলাইন এবং লাল হয়।</li>
-                </ul>
-	            <h5>
-                    A Simple HTML Document
-                </h5> 
-
-                <div class="example">
-                <textarea rows="13"id="example1"class="form-control">
-<!DOCTYPE html>
-<html>
 <head>
-<title>Page Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/samestyle.css">
+    <title>HTML Hyperlink</title>
 </head>
-<body>
-    &lt;a  href="url"&gt; Link text &lt;/a&gt;
-</body>
-</html>  
-                </textarea>
-                <br>
-                <button class="btn btn-primary try-btn1">
-                    Try It Yourself <i class="fas fa-chevron-right"></i>
-                </button>
-                </div> 
-                <br>
-            <h6>একটি লিঙ্ক সাধারণত দুইভাবে দেখা যায়ঃ-</h6> 
-            <ol style="margin:20px;">
-                <li>
-                 পেইজ লিঙ্ক এ ক্লিক করলে তা নিজস্ব উইন্ডো তে দেখাবে । 
-                </li>
-                <li>
-                    পেইজ টি নতুন কোনো উইন্ডো তে দেখাবে ।
-                </li>
-             </ol><br>
 
-<h6>
-   <b> "Target" attribute এর ব্যবহার করে লিঙ্ক কোন পেইজ এ ওপেন করা হবে তা নির্ধারণঃ-
-</b>
-</h6>
-<ul>
-    <li>
-         target="_blank"   একটি ওয়েবপেইজ নতুন উইন্ডোতে ওপেন করার ক্ষেত্রে ।
-    </li>
-    <li>
-        target="_self"   লিংককৃত পেইজটি বর্তমান ব্রাউজারেই ওপেন করবে।
-    </li>
-   <li>
-    target="_New"     নতুন ব্রাউজার উইন্ডোতে লিংককৃত পেইজটি ওপেন হবে।
-   </li>
-    <li>
-        target="_top"  লিংককৃত পেইজটি  বর্তমান উইন্ডোতে এবং সম্পূর্ণ উইন্ডো জুরে ওপেন হবে।
-   </li>
-</ul>
-<p>গঠনঃ <span class="highlight">  &lt;a  href="url" target="_blank"&gt; Link text &lt;/a&gt;  </p></span></p>
-<br>
+<body class="noselect">
+    <div class="container-fluid">
+        <div class="row header align-items-center">
+            <div class="col-2 header-left">
+                <i class="fas fa-arrow-left" onclick="back()"></i>
+            </div>
+            <div class="col-8 header-title ">
 
-        <!---Footer Row-->
-        <div class="row align-items-center main-content">
-            <div class="col-3 prev"onclick="prev()">
-                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
             </div>
-            <div class="col-6 exam">
-                <button onclick="quiz()"class="btn btn-primary">
-                    কুইজ দিন
-                </button>
-            </div>
-            <div class="col-3 next"onclick="next()">
-                <i class="fas fa-arrow-right"style="color: #1E88E5;"></i>
+            <div class="col-2 header-right">
+                <i class="fas fa-home" onclick="home()"></i>
             </div>
         </div>
     </div>
 
+    <div class="container-fluid main">
+        <div class="row align-items-center main-content">
+            <div class="col">
+                <h5> <b>Hyperlink কি?</b></h5>
+                <p>
+                    হাইপারলিঙ্ক হচ্ছে একটি ওয়েবপেইজের কোনো একটি অংশের সাথে অন্যান্য পেইজের সংযোগ স্থাপন করা ।
+                    একটি Hyperlink দিয়ে একটি শব্দের উপর বা কতগুলো শব্দের উপর লিঙ্ক দেওয়া যায় ।
+                </p>
+                <h5><b>কিভাবে Hyperlink ব্যাবহার করতে হয় ?</b></h5>
+                <ul>
+                    <li>এইচটিএমএল ট্যাগ <span class="highlight">" &lt;a&gt; " </span> দ্বারা হাইপারলিঙ্ক স্থাপন করতে হয়
+                        ।</li>
+                    <li><span class="highlight">" &lt;a&gt; "</span> ট্যাগের সাথে <span class="highlight">" href
+                            "</span> attribute যোগ করতে হয় । </li>
+                    <li><span class="highlight"> " href " </span>attributes এর পূর্ণরূপ <span class="highlight">" a
+                            hyperlink reference "</span></li>
+                    <li> এখানে<span class="highlight"> " URL "</span> দ্বারা কোনো ওয়েবপেইজ এর পূর্ণ ঠিকানা বোঝানো হয়।
+                    </li>
+                    <li> লিস্ট করার ক্ষেত্রে সময় বাঁচানোর জন্যে<span class="highlight"> " &lt;li&gt; "</span> ট্যাগ
+                        ব্যবহার করা হয় এবং তা আপনি লিস্টিং এর ক্ষেত্রে বিস্তারিত জানতে পারবেন।</li>
+                </ul>
+                <p> গঠনঃ <span class="highlight"> &lt;a href="url"&gt; Link text &lt;/a&gt;</span> </p>
 
-        <script src="../jquery&popper/jqueryslim.js"></script>
-        <script src="../jquery&popper/popper.min.js"></script>
-        <script src="../bootstrap/js/bootstrap.min.js"></script>
-        <script src="../cordova.js"></script>
-        <script src="../js/header.js"></script>
-        <script src="js/main.js"></script>
 
-        <script>
-            const example1 = document.getElementById("example1").value;
-            const example1btn = document.querySelector(".try-btn1");
+                <h5> Default হিসাবে ব্রাউজার এ লিংক গুলো নিম্নরূপে থাকে ঃ</h5>
 
-            example1btn.onclick = ()=>{
-                localStorage.setItem("example",example1);
-                window.location.href = "../editor.html";
-            }
-            localStorage.setItem("whereYouRead","12");
+                <ul>
+                    <li>একটি অপরিদর্শিত লিঙ্ক আন্ডারলাইন এবং নীল হয় ।</li>
+                    <li> একটি পরিদর্শন লিঙ্ক আন্ডারলাইন এবং বাদামী হয়।</li>
+                    <li>একটি সক্রিয় লিঙ্ক অ্যান্ডারলাইন এবং লাল হয়।</li>
+                </ul>
+                <h5>
+                    Example of anchor(&lt;a&gt;) tag:
+                </h5>
 
-            //send user on home page
-            function home(){
-                window.location.href = "../index.html";
-            }
-            function prev(){
-                window.location.href = "image.html";
-            }
-            function next(){
-                window.location.href = "table.html";
-            }
-            function back(){
-                window.history.back();
-            }
+                <div class="example">
+                    <pre class="example-code"><div class="code-highlights"id="example1">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-            //send user on quiz
-            function quiz(){
-                window.location.href = "../quiz/link.html";
-            }
-        </script>
-    </body>
+&lt;a  href="http://google.com" target="_blank"&gt; Go to google &lt;/a&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                    <button class="btn btn-primary try-btn1">
+                        Try It Yourself <i class="fas fa-chevron-right"></i>
+                    </button>
+                    </div> 
+                <br>
+                <h5>একটি লিঙ্ক সাধারণত দুইভাবে দেখা যায়ঃ-</h5>
+                <ol style="margin:20px;">
+                    <li>
+                        পেইজ লিঙ্ক এ ক্লিক করলে তা নিজস্ব উইন্ডো তে দেখাবে ।
+                    </li>
+                    <li>
+                        পেইজ টি নতুন কোনো উইন্ডো তে দেখাবে ।
+                    </li>
+                </ol><br>
+
+                <h5>
+                    "Target" attribute এর ব্যবহার করে লিঙ্ক কোন পেইজ এ ওপেন করা হবে তা নির্ধারণঃ-
+                </h5>
+                <ul>
+                    <li>
+                        target="_blank" একটি ওয়েবপেইজ নতুন উইন্ডোতে ওপেন করার ক্ষেত্রে ।
+                    </li>
+                    <li>
+                        target="_self" লিংককৃত পেইজটি বর্তমান ব্রাউজারেই ওপেন করবে।
+                    </li>
+                    <li>
+                        target="_New" নতুন ব্রাউজার উইন্ডোতে লিংককৃত পেইজটি ওপেন হবে।
+                    </li>
+                    <li>
+                        target="_top" লিংককৃত পেইজটি বর্তমান উইন্ডোতে এবং সম্পূর্ণ উইন্ডো জুরে ওপেন হবে।
+                    </li>
+                </ul>
+                <p>গঠনঃ <span class="highlight"> &lt;a href="url" target="_blank"&gt; Link text &lt;/a&gt; </p></span>
+                </p>
+                <br>
+
+                <!---Footer Row-->
+                <div class="row align-items-center main-content">
+                    <div class="col-3 prev" onclick="prev()">
+                        <i class="fas fa-arrow-left" style="color: #1E88E5;"></i>
+                    </div>
+                    <div class="col-6 exam">
+                        <button onclick="quiz()" class="btn btn-primary">
+                            কুইজ দিন
+                        </button>
+                    </div>
+                    <div class="col-3 next" onclick="next()">
+                        <i class="fas fa-arrow-right" style="color: #1E88E5;"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="../jquery&popper/jqueryslim.js"></script>
+            <script src="../jquery&popper/popper.min.js"></script>
+            <script src="../bootstrap/js/bootstrap.min.js"></script>
+            <script src="../cordova.js"></script>
+            <script src="../js/header.js"></script>
+            <script src="js/main.js"></script>
+
+            <script>
+                w3CodeColor(document.querySelector(".code-highlights"));
+            
+                const example1 = document.getElementById("example1").innerText;
+                const example1btn = document.querySelector(".try-btn1");
+                
+                example1btn.onclick = ()=>{
+                    localStorage.setItem("example",example1);
+                    window.location.href = "../editor.html";
+                }
+
+                localStorage.setItem("whereYouRead", "12");
+
+                //send user on home page
+                function home() {
+                    window.location.href = "../index.html";
+                }
+                function prev() {
+                    window.location.href = "image.html";
+                }
+                function next() {
+                    window.location.href = "table.html";
+                }
+                function back() {
+                    window.history.back();
+                }
+
+                //send user on quiz
+                function quiz() {
+                    window.location.href = "../quiz/link.html";
+                }
+            </script>
+</body>
+
 </html>
