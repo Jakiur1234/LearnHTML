@@ -1,130 +1,160 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../fontawesome/css/all.css">
-        <link rel="stylesheet" href="../css/header.css">
-        <link rel="stylesheet" href="css/samestyle.css">
-        <title>HTML Image</title>
-    </head>
-    <body class="noselect">
-        <div class="container-fluid">
-            <div class="row header align-items-center">
-              <div class="col-2 header-left">
-                <i class="fas fa-arrow-left"onclick="back()"></i>
-              </div>
-              <div class="col-8 header-title ">
-      
-              </div>
-              <div class="col-2 header-right">
-                <i class="fas fa-home"onclick="home()"></i>
-              </div>
-            </div>
-        </div>
 
-        <div class="container-fluid main">
-            <div class="row align-items-center main-content">
-                <div class="col">
-                <h5>HTML কি?</h5> 
-                <ul>
-                    <li>HTML এর পূর্নরূপ হলো Hyper Text Makrup Language ।</li>
-                    <li>Web page তৈরির জন্য HTML একটা আদর্শ markup language ।</li>
-                    <li>HTML একটা ওয়েবসাইট এর কাঠামো তৈরি করতে ব্যাবহার করা হয় ।</li>
-                    <li>HTML অনেকগুলো elements এর সমন্বয়ে গঠিত হয় ।</li>
-                    <li>HTML elements গুলাই নির্ধারণ করে ব্রাউজার সকল কন্টেন্ট কিভাবে প্রদর্শিত হবে ।</li>
-                </ul>
-	            <h5>
-                    A Simple HTML Document
-                </h5> 
-
-                <div class="example">
-                <textarea rows="13"id="example1"class="form-control">
-<!DOCTYPE html>
-<html>
 <head>
-<title>Page Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/samestyle.css">
+    <title>HTML Image</title>
 </head>
-<body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
-</html>  
-                </textarea>
-                <br>
-                <button class="btn btn-primary try-btn1">
-                    Try It Yourself <i class="fas fa-chevron-right"></i>
-                </button>
-                </div> 
-                <br>
-            <h5>Example এর বর্ণনা</h5> 
-<ul>
-	<li><span class="highlight">&lt;!DOCTYPE html&gt;</span> নির্দেশ করে এটা একটা html5 ডকুমেন্টস । </li>
-	<li><span class="highlight">&lt;html&gt;</span> element হচ্ছে html পেইজ এর মূল element । এর ভিতরেই html এর বাকি সকল element থাকে ।</li>
-	<li><span class="highlight">&lt;head&gt;</span>element একটা পেইজ এর এবং ওয়েবসাইট এর meta সম্পর্কিত সকল তথ্য ধারণ করে রাখে ।</li>
-	<li><span class="highlight">&lt;title&gt;</span> মূলত <span class="highlight">&lt;head&gt;</span> এর ভিতরে অবস্থান করে এবং এই elements এর ভিতরে থাকা তথ্য ওয়েব ব্রাউজার এর tab এর টাইটেল হিসেবে দেখানো হয় ।</li>
-	<li><span class="highlight">&lt;body&gt;</span> element ডকুমেন্টের মূল body নির্দেশ করে । এটা মূলত একটা container হিসেবে কাজ করে 
-     যেটা ওয়েব পেজের সকল দৃশ্যমান অংশ ধারণ করে । উদাহরণ হিসেবে বলা যায় headings,paragraph,img, link,hyperlink ইত্যাদি ।</li>
-	<li><span class="highlight">&lt;h1&gt;</span> সবচেয়ে বড় heading ট্যাগ । </li>
-	<li><span class="highlight">&lt;p&gt;</span> মূলত প্যারাগ্রাফ ট্যাগ কে নির্দেশ করে ।</li>
-</ul>
-<br>
-
-        <!---Footer Row-->
-        <div class="row align-items-center main-content">
-            <div class="col-3 prev"onclick="prev()">
-                <i class="fas fa-arrow-left"style="color: #1E88E5;"></i>
+<body class="noselect">
+    <div class="container-fluid">
+        <div class="row header align-items-center">
+            <div class="col-2 header-left">
+                <i class="fas fa-arrow-left" onclick="back()"></i>
             </div>
-            <div class="col-6 exam">
-                <button onclick="quiz()"class="btn btn-primary">
-                    কুইজ দিন
-                </button>
+            <div class="col-8 header-title ">
+
             </div>
-            <div class="col-3 next"onclick="next()">
-                <i class="fas fa-arrow-right"style="color: #1E88E5;"></i>
+            <div class="col-2 header-right">
+                <i class="fas fa-home" onclick="home()"></i>
             </div>
         </div>
     </div>
 
+    <div class="container-fluid main">
+        <div class="row align-items-center main-content">
+            <div class="col">
+                <h5>HTML Image:</h5>
+                <ul>
+                    <li>HTML এ <span class="highlight">&lt;img&gt; </span> ট্যাগ ব্যবহার করা হয় ওয়েব পেজ এ ছবি যুক্ত
+                        করার জন্য।ছবি সাধারণত ওয়েব পেজ এ লিংক করা করা হয় এই <span
+                            class="highlight">&lt;img&gt;</span>ট্যাগ এর মাধ্যমে |</li>
+                    <li>এই <span class="highlight">&lt;img&gt;</span>হচ্ছে empty ট্যাগ, এই ট্যাগ এ শুধু attributes থাকে
+                        এবং এই ট্যাগ এর কোনো closing ট্যাগ নেই। </li>
+                    <li>এই <span class="highlight">&lt;img&gt;</span> ট্যাগ এর দুইটি প্রয়োজনীয় attributes রয়েছে।</li>
+                    <ol>
+                        <li><b><big>src</big></b> - এই attribute ইমেজ এর লোকেশন নির্ধারণ কর।</li>
+                        <li><b><big>alt</big></b> - এই attribute ইমেজ এর জন্য বিকল্প টেক্সট নির্ধারণ কর।</li>
+                    </ol>
 
-        <script src="../jquery&popper/jqueryslim.js"></script>
-        <script src="../jquery&popper/popper.min.js"></script>
-        <script src="../bootstrap/js/bootstrap.min.js"></script>
-        <script src="../cordova.js"></script>
-        <script src="../js/header.js"></script>
-        <script src="js/main.js"></script>
+                </ul>
+                <h5>
+                    A Simple HTML Document
+                </h5>
 
-        <script>
-            const example1 = document.getElementById("example1").value;
-            const example1btn = document.querySelector(".try-btn1");
+                <div class="example">
+                    <pre class="example-code"><div class="code-highlights"id="example1">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-            example1btn.onclick = ()=>{
-                localStorage.setItem("example",example1);
-                window.location.href = "../editor.html";
-            }
-            localStorage.setItem("whereYouRead","11");
+&lt;img src="url" alt="alternatetext"&gt;
 
-            //send user on home page
-            function home(){
-                window.location.href = "../index.html";
-            }
-            function prev(){
-                window.location.href = "css.html";
-            }
-            function next(){
-                window.location.href = "link.html";
-            }
-            function back(){
-                window.history.back();
-            }
+&lt;/body&gt;
+&lt;/html&gt;</div></pre>
+                    <button class="btn btn-primary try-btn1">
+                        Try It Yourself <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <br>
+                <h5>Example এর বর্ণনা</h5>
+                <ul>
+                    <li><span class="highlight">&lt;!DOCTYPE html&gt;</span> নির্দেশ করে এটা একটা html5 ডকুমেন্টস ।
+                    </li>
+                    <li><span class="highlight">&lt;html&gt;</span> element হচ্ছে html পেইজ এর মূল element । এর ভিতরেই
+                        html এর বাকি সকল element থাকে ।</li>
+                    <li><span class="highlight">&lt;head&gt;</span>element একটা পেইজ এর এবং ওয়েবসাইট এর meta সম্পর্কিত
+                        সকল তথ্য ধারণ করে রাখে ।</li>
+                    <li><span class="highlight">&lt;title&gt;</span> মূলত <span class="highlight">&lt;head&gt;</span> এর
+                        ভিতরে অবস্থান করে এবং এই elements এর ভিতরে থাকা তথ্য ওয়েব ব্রাউজার এর tab এর টাইটেল হিসেবে
+                        দেখানো হয় ।</li>
+                    <li><span class="highlight">&lt;body&gt;</span> element ডকুমেন্টের মূল body নির্দেশ করে । এটা মূলত
+                        একটা container হিসেবে কাজ করে
+                        যেটা ওয়েব পেজের সকল দৃশ্যমান অংশ ধারণ করে । উদাহরণ হিসেবে বলা যায় headings,paragraph,img,
+                        link,hyperlink ইত্যাদি ।</li>
+                    ইমেজটি যে এর (URL) এর মধ্যে অবস্থিত তার লোকেশন এই Attribute এ নির্ধারণ করতে হবে।<br> 
+                    <b>Note:</b>যখন একটি ওয়েব পেজ এ ইমেজ  লোড হয় তখন এটি সার্ভার থেকে আসে, কিন্তু যদি সেই সার্ভার এ ইমেজটি না থাকে তখন একটি broken link icon দেখা যায় । তখন সেই broken link icon এবং <span class="highlight">alt</span> টেক্সট দেখা যায় যদি ব্রাউজার ইমেজটি খুঁজে না পায়।
+                </div><br>
+                <h5>Example:</h5>
+                <div class="example">
+                    <pre class="example-code"><div class="code-highlights1"id="example2">&lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;
+</div></pre>
+                    <button class="btn btn-primary try-btn2">
+                        Try It Yourself <i class="fas fa-chevron-right"></i>
+                    </button>
+                    </div> 
 
-            //send user on quiz
-            function quiz(){
-                window.location.href = "../quiz/image.html";
-            }
-        </script>
-    </body>
+
+                <!---Footer Row-->
+                <div class="row align-items-center main-content">
+                    <div class="col-3 prev" onclick="prev()">
+                        <i class="fas fa-arrow-left" style="color: #1E88E5;"></i>
+                    </div>
+                    <div class="col-6 exam">
+                        <button onclick="quiz()" class="btn btn-primary">
+                            কুইজ দিন
+                        </button>
+                    </div>
+                    <div class="col-3 next" onclick="next()">
+                        <i class="fas fa-arrow-right" style="color: #1E88E5;"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="../jquery&popper/jqueryslim.js"></script>
+            <script src="../jquery&popper/popper.min.js"></script>
+            <script src="../bootstrap/js/bootstrap.min.js"></script>
+            <script src="../cordova.js"></script>
+            <script src="../js/header.js"></script>
+            <script src="js/main.js"></script>
+
+            <script>
+                w3CodeColor(document.querySelector(".code-highlights"));
+                const example1 = document.getElementById("example1").value;
+                const example1btn = document.querySelector(".try-btn1");
+
+                example1btn.onclick = () => {
+                    localStorage.setItem("example", example1);
+                    window.location.href = "../editor.html";
+                }
+
+                w3CodeColor(document.querySelector(".code-highlights1"));
+                const example2 = document.getElementById("example2").value;
+                const example2btn = document.querySelector(".try-btn2");
+
+                example2btn.onclick = () => {
+                    localStorage.setItem("example", example2);
+                    window.location.href = "../editor.html";
+                }
+                localStorage.setItem("whereYouRead", "11");
+
+                //send user on home page
+                function home() {
+                    window.location.href = "../index.html";
+                }
+                function prev() {
+                    window.location.href = "css.html";
+                }
+                function next() {
+                    window.location.href = "link.html";
+                }
+                function back() {
+                    window.history.back();
+                }
+
+                //send user on quiz
+                function quiz() {
+                    window.location.href = "../quiz/image.html";
+                }
+            </script>
+</body>
+
 </html>
