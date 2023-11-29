@@ -5,7 +5,7 @@
   p.innerHTML = document.title;
 
   function openNav() {
-    document.getElementById("mySidenav").style.width = "80%";
+    document.getElementById("mySidenav").style.width = "280px";
     overlay.style.display = "block";
     crossbtn.style.display = "block";
   }
